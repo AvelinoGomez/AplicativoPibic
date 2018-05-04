@@ -1,0 +1,475 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12
+MERGED from [com.android.support:appcompat-v7:23.0.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.0.aar\471fe7d21245f1bac9fbbf4d697cf751\AndroidManifest.xml:17:1-24:12
+MERGED from [:myscript-certificate] C:\Users\Avelino\Desktop\AplicativoPibic\samples\myscript-certificate\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:MyScript_ATK-Core-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Core-android-component.aar\918c71411e7017b439470fd553758700\AndroidManifest.xml:2:1-13:12
+MERGED from [:MyScript_ATK-Text-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Text-android-component.aar\d8f64b3b357b032b7d9617de4a3a65b5\AndroidManifest.xml:2:1-11:12
+MERGED from [:MyScript_ATK-IMCommon-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-IMCommon-android-component.aar\8d63dcf8f60c7e3b9b15d4e108bcd540\AndroidManifest.xml:2:1-11:12
+MERGED from [:MyScript_ATK-SingleLineWidget-android-widget:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-SingleLineWidget-android-widget.aar\e5af4a7a7a67e7665ea775d46aff4c37\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-database:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-11.6.2.aar\cf8bd00758866b6fd7982d90f0c24e6e\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-auth:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.2.aar\7295325f1e85a0b935e2774ce335dc0e\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-core:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.2.aar\4a75c91047cf8b2d15ff80b853469d2a\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\293476adf0747ab7c6fffe6067989afb\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-database-connection:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.6.2.aar\aecc30c62f101cf39b3edc06ae994fec\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:16:1-35:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:16:1-29:12
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:16:1-47:12
+MERGED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-base:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.2.aar\a83575e5adf5cc261911edbfd6ceff8f\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\6c34f20c366019c90c328b2d1dd71139\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\937e7cede81b323c6690cee3c50340f6\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-database-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.2.aar\484eb2753531020e7ba51ce3c4235b71\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-auth-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.2.aar\f957241d7cc300585768cd04bba9cb40\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\1130212c67cafc12cd0526aa2d702a6c\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\45fb83a3eed4b8a726c9b3fbcabc1534\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\da6e02fce8e5e5c0100693d6382d2aaa\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\afdeffed2265cc1a4dc1d936c3a13f3d\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9c826e86aa9df95a0228b3b055e901f6\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.2.aar\890d9b44467f896dbd260817e8c518aa\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.2.aar\6689d17632a98246411be6cb3e8389de\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.2.aar\f5bf03878ac32fd3f4ce7b1382553ef2\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.2.aar\13022719109cbe09506231fe620b8b49\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.2.aar\9264c052a60a82c6352706e9a5cfdb53\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.2.aar\9557c3b65f60fc87baaf9f1d38a2e32d\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.2.aar\c21de751c8c4bd995a275e055d5deff4\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.2.aar\e0d2e1e3e9f8d5e697fcd3f5d7492fb8\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12
+	package
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:6:5-81
+MERGED from [:MyScript_ATK-Core-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Core-android-component.aar\918c71411e7017b439470fd553758700\AndroidManifest.xml:11:5-81
+MERGED from [:MyScript_ATK-Core-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Core-android-component.aar\918c71411e7017b439470fd553758700\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:6:22-78
+supports-screens
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:8:5-14:40
+	android:largeScreens
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:10:9-36
+	android:smallScreens
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:13:9-36
+	android:normalScreens
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:11:9-37
+	android:xlargeScreens
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:14:9-37
+	android:resizeable
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:12:9-34
+	android:anyDensity
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:9:9-34
+application
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:16:5-62:19
+MERGED from [com.android.support:appcompat-v7:23.0.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.0.aar\471fe7d21245f1bac9fbbf4d697cf751\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.0.aar\471fe7d21245f1bac9fbbf4d697cf751\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-auth:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.2.aar\7295325f1e85a0b935e2774ce335dc0e\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.2.aar\7295325f1e85a0b935e2774ce335dc0e\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-core:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.2.aar\4a75c91047cf8b2d15ff80b853469d2a\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.2.aar\4a75c91047cf8b2d15ff80b853469d2a\AndroidManifest.xml:5:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\293476adf0747ab7c6fffe6067989afb\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\293476adf0747ab7c6fffe6067989afb\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:29:5-46:19
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:29:5-46:19
+MERGED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-base:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.2.aar\a83575e5adf5cc261911edbfd6ceff8f\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.2.aar\a83575e5adf5cc261911edbfd6ceff8f\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\6c34f20c366019c90c328b2d1dd71139\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\6c34f20c366019c90c328b2d1dd71139\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\937e7cede81b323c6690cee3c50340f6\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\937e7cede81b323c6690cee3c50340f6\AndroidManifest.xml:25:5-20
+MERGED from [com.google.firebase:firebase-database-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.2.aar\484eb2753531020e7ba51ce3c4235b71\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.2.aar\484eb2753531020e7ba51ce3c4235b71\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-auth-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.2.aar\f957241d7cc300585768cd04bba9cb40\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-auth-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.2.aar\f957241d7cc300585768cd04bba9cb40\AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\1130212c67cafc12cd0526aa2d702a6c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\1130212c67cafc12cd0526aa2d702a6c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\45fb83a3eed4b8a726c9b3fbcabc1534\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\45fb83a3eed4b8a726c9b3fbcabc1534\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\da6e02fce8e5e5c0100693d6382d2aaa\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\da6e02fce8e5e5c0100693d6382d2aaa\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\afdeffed2265cc1a4dc1d936c3a13f3d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\afdeffed2265cc1a4dc1d936c3a13f3d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9c826e86aa9df95a0228b3b055e901f6\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9c826e86aa9df95a0228b3b055e901f6\AndroidManifest.xml:25:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.2.aar\890d9b44467f896dbd260817e8c518aa\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.2.aar\890d9b44467f896dbd260817e8c518aa\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.2.aar\6689d17632a98246411be6cb3e8389de\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.2.aar\6689d17632a98246411be6cb3e8389de\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.2.aar\f5bf03878ac32fd3f4ce7b1382553ef2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.2.aar\f5bf03878ac32fd3f4ce7b1382553ef2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.2.aar\13022719109cbe09506231fe620b8b49\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.2.aar\13022719109cbe09506231fe620b8b49\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.2.aar\9264c052a60a82c6352706e9a5cfdb53\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.2.aar\9264c052a60a82c6352706e9a5cfdb53\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.2.aar\9557c3b65f60fc87baaf9f1d38a2e32d\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.2.aar\9557c3b65f60fc87baaf9f1d38a2e32d\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.2.aar\c21de751c8c4bd995a275e055d5deff4\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.2.aar\c21de751c8c4bd995a275e055d5deff4\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.2.aar\e0d2e1e3e9f8d5e697fcd3f5d7492fb8\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.2.aar\e0d2e1e3e9f8d5e697fcd3f5d7492fb8\AndroidManifest.xml:5:5-20
+	android:label
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:19:9-51
+	android:icon
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:18:9-43
+	android:allowBackup
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:20:9-40
+activity#com.myscript.atk.sltw.sample.Activity.login_activity
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:21:9-33:20
+	android:screenOrientation
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:26:13-49
+	android:label
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:24:13-34
+	android:windowSoftInputMode
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:27:13-54
+	android:noHistory
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:25:13-38
+	android:configChanges
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:23:13-59
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:22:13-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:28:13-32:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:29:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:31:27-74
+activity#com.myscript.atk.sltw.sample.Activity.telaconfig
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:34:9-37:53
+	android:screenOrientation
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:37:13-50
+	android:noHistory
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:36:13-38
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:35:13-48
+activity#com.myscript.atk.sltw.sample.Activity.MainActivity
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:38:9-41:53
+	android:screenOrientation
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:41:13-50
+	android:noHistory
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:40:13-38
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:39:13-50
+activity#com.myscript.atk.sltw.sample.Activity.telamenu
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:42:9-45:53
+	android:screenOrientation
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:45:13-50
+	android:noHistory
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:44:13-38
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:43:13-46
+activity#com.myscript.atk.sltw.sample.Activity.CadastroActivity
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:46:9-49:52
+	android:screenOrientation
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:49:13-49
+	android:noHistory
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:48:13-38
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:47:13-54
+activity#com.myscript.atk.sltw.sample.Activity.PrincipalAdm
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:50:9-59
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:50:19-56
+activity#com.myscript.atk.sltw.sample.Activity.MenuAdm
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:51:9-54
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:51:19-51
+activity#com.myscript.atk.sltw.sample.Activity.ConfigAdm
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:52:9-56
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:52:19-53
+activity#com.myscript.atk.sltw.sample.Helper.AdicionarPalavra
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:53:9-61
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:53:19-58
+activity#com.myscript.atk.sltw.sample.Activity.loja
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:54:9-56:53
+	android:screenOrientation
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:56:13-50
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:55:13-42
+activity#com.myscript.atk.sltw.sample.Activity.paletaCoresLapis
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:57:9-58:53
+	android:screenOrientation
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:58:13-50
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:57:19-60
+activity#com.myscript.atk.sltw.sample.Activity.paletaCoresPapel
+ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:59:9-61:25
+	android:screenOrientation
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:60:13-50
+	android:name
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:59:19-60
+uses-sdk
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:23.0.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.0.aar\471fe7d21245f1bac9fbbf4d697cf751\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.0.aar\471fe7d21245f1bac9fbbf4d697cf751\AndroidManifest.xml:20:5-43
+MERGED from [:myscript-certificate] C:\Users\Avelino\Desktop\AplicativoPibic\samples\myscript-certificate\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:myscript-certificate] C:\Users\Avelino\Desktop\AplicativoPibic\samples\myscript-certificate\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:MyScript_ATK-Core-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Core-android-component.aar\918c71411e7017b439470fd553758700\AndroidManifest.xml:7:5-9:41
+MERGED from [:MyScript_ATK-Core-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Core-android-component.aar\918c71411e7017b439470fd553758700\AndroidManifest.xml:7:5-9:41
+MERGED from [:MyScript_ATK-Text-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Text-android-component.aar\d8f64b3b357b032b7d9617de4a3a65b5\AndroidManifest.xml:7:5-9:41
+MERGED from [:MyScript_ATK-Text-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Text-android-component.aar\d8f64b3b357b032b7d9617de4a3a65b5\AndroidManifest.xml:7:5-9:41
+MERGED from [:MyScript_ATK-IMCommon-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-IMCommon-android-component.aar\8d63dcf8f60c7e3b9b15d4e108bcd540\AndroidManifest.xml:7:5-9:41
+MERGED from [:MyScript_ATK-IMCommon-android-component:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-IMCommon-android-component.aar\8d63dcf8f60c7e3b9b15d4e108bcd540\AndroidManifest.xml:7:5-9:41
+MERGED from [:MyScript_ATK-SingleLineWidget-android-widget:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-SingleLineWidget-android-widget.aar\e5af4a7a7a67e7665ea775d46aff4c37\AndroidManifest.xml:7:5-9:41
+MERGED from [:MyScript_ATK-SingleLineWidget-android-widget:] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-SingleLineWidget-android-widget.aar\e5af4a7a7a67e7665ea775d46aff4c37\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-database:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-11.6.2.aar\cf8bd00758866b6fd7982d90f0c24e6e\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-11.6.2.aar\cf8bd00758866b6fd7982d90f0c24e6e\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-auth:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.2.aar\7295325f1e85a0b935e2774ce335dc0e\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.2.aar\7295325f1e85a0b935e2774ce335dc0e\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-core:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.2.aar\4a75c91047cf8b2d15ff80b853469d2a\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.2.aar\4a75c91047cf8b2d15ff80b853469d2a\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\293476adf0747ab7c6fffe6067989afb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\293476adf0747ab7c6fffe6067989afb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-connection:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.6.2.aar\aecc30c62f101cf39b3edc06ae994fec\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.6.2.aar\aecc30c62f101cf39b3edc06ae994fec\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.2.aar\a83575e5adf5cc261911edbfd6ceff8f\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.2.aar\a83575e5adf5cc261911edbfd6ceff8f\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\6c34f20c366019c90c328b2d1dd71139\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\6c34f20c366019c90c328b2d1dd71139\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\937e7cede81b323c6690cee3c50340f6\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\937e7cede81b323c6690cee3c50340f6\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.firebase:firebase-database-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.2.aar\484eb2753531020e7ba51ce3c4235b71\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.2.aar\484eb2753531020e7ba51ce3c4235b71\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.2.aar\f957241d7cc300585768cd04bba9cb40\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.2.aar\f957241d7cc300585768cd04bba9cb40\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\1130212c67cafc12cd0526aa2d702a6c\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\1130212c67cafc12cd0526aa2d702a6c\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\45fb83a3eed4b8a726c9b3fbcabc1534\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\45fb83a3eed4b8a726c9b3fbcabc1534\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\da6e02fce8e5e5c0100693d6382d2aaa\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\da6e02fce8e5e5c0100693d6382d2aaa\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\afdeffed2265cc1a4dc1d936c3a13f3d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\afdeffed2265cc1a4dc1d936c3a13f3d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9c826e86aa9df95a0228b3b055e901f6\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9c826e86aa9df95a0228b3b055e901f6\AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.2.aar\890d9b44467f896dbd260817e8c518aa\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.2.aar\890d9b44467f896dbd260817e8c518aa\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.2.aar\6689d17632a98246411be6cb3e8389de\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.2.aar\6689d17632a98246411be6cb3e8389de\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.2.aar\f5bf03878ac32fd3f4ce7b1382553ef2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.2.aar\f5bf03878ac32fd3f4ce7b1382553ef2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.2.aar\13022719109cbe09506231fe620b8b49\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.2.aar\13022719109cbe09506231fe620b8b49\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.2.aar\9264c052a60a82c6352706e9a5cfdb53\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.2.aar\9264c052a60a82c6352706e9a5cfdb53\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.2.aar\9557c3b65f60fc87baaf9f1d38a2e32d\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.2.aar\9557c3b65f60fc87baaf9f1d38a2e32d\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.2.aar\c21de751c8c4bd995a275e055d5deff4\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.2.aar\c21de751c8c4bd995a275e055d5deff4\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.2.aar\e0d2e1e3e9f8d5e697fcd3f5d7492fb8\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.2.aar\e0d2e1e3e9f8d5e697fcd3f5d7492fb8\AndroidManifest.xml:4:5-43
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.2.0] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\937e7cede81b323c6690cee3c50340f6\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\src\main\AndroidManifest.xml:2:1-64:12 reason: com.myscript.atk.core requested WRITE_EXTERNAL_STORAGE
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:21:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:27:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\AndroidManifest.xml:33:16-90
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:23:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:25:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:25:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:25:17-71
+permission#com.myscript.atk.sltw.sample.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:25:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:25:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:25:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:27:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:27:22-76
+uses-permission#com.myscript.atk.sltw.sample.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:27:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:27:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:31:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:31:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:31:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:31:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:32:13-35:29
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.myscript.atk.sltw.sample
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:32:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:33:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:33:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:34:27-58
+category#com.myscript.atk.sltw.sample
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:34:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:40:9-44:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:40:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:40:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:41:13-43:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:41:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:42:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\AndroidManifest.xml:42:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\AndroidManifest.xml:6:79-143
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\6c34f20c366019c90c328b2d1dd71139\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\6c34f20c366019c90c328b2d1dd71139\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.6.2] C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\6c34f20c366019c90c328b2d1dd71139\AndroidManifest.xml:20:20-65

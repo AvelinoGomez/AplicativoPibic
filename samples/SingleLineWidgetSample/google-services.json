@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "283902809093",
+    "firebase_url": "https://aplicativo-pibic.firebaseio.com",
+    "project_id": "aplicativo-pibic",
+    "storage_bucket": "aplicativo-pibic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283902809093:android:5438fea3b97bf35e",
+        "android_client_info": {
+          "package_name": "com.myscript.atk.sltw.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283902809093-9qm3fsnphu2dfie0jpiaa474pa32e5p4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myscript.atk.sltw.sample",
+            "certificate_hash": "606d386f3ccb4b4fa1dcb74a1c456f41affbb4c2"
+          }
+        },
+        {
+          "client_id": "283902809093-sve30hbm1jsfan519ihs2ufpsb2rvk3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhrxNfDvXWXfIvDBpV4kP4CX-1B46S9ug"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283902809093-sve30hbm1jsfan519ihs2ufpsb2rvk3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

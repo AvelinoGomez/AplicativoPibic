@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33ecef3d"
+    tools:context="com.myscript.atk.sltw.sample.Activity.ConfigAdm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Palavra"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/aca_edtAddPalavra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:hint="Digite a palavra que deseja adicionar"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            tools:clickable="false"
+            tools:focusable="false"
+            tools:focusableInTouchMode="false" />
+
+        <Button
+            android:id="@+id/aca_btnAddPalavra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Adicionar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Lista de Palavras"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/aca_btnRefresh"
+                android:layout_width="43dp"
+                android:layout_height="46dp"
+                android:layout_margin="3dp"
+                android:layout_marginRight="0dp"
+                android:background="@mipmap/ic_refresh" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/aca_listaPalavras"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

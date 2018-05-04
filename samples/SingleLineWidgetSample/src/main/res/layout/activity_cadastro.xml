@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33ecef3d"
+    tools:context="com.myscript.atk.sltw.sample.Activity.CadastroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="Cadastro"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edtNomeCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:hint="Nome"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtSobrenomeCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:hint="Sobrenome"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtEmailCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtSenhaCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edtConfirmaSenhaCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:hint="Confirmar Senha"
+                android:inputType="textPassword" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtDiaNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Dia"
+                    android:inputType="date" />
+
+                <EditText
+                    android:id="@+id/edtMesNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Mês"
+                    android:inputType="date" />
+
+                <EditText
+                    android:id="@+id/edtAnoNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ano"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="Cadastrar" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
