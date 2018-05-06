@@ -92,7 +92,8 @@ public class login_activity extends AppCompatActivity {
         });
 
         ReadPalavras rp = new ReadPalavras(getApplicationContext());
-        ArrayList<Palavra> palavraListaBD = rp.getPalavras();
+        ArrayList<Palavra> palavraListaBD = new ArrayList<Palavra>();
+        palavraListaBD = rp.getPalavras();
 
         if(palavraLista.size()!=palavraListaBD.size()){
             DeletePalavras del = new DeletePalavras(getApplicationContext());

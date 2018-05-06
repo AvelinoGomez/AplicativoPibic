@@ -47,16 +47,18 @@ public class MainActivity extends Activity implements
   private DatabaseReference firebase = FirebaseDatabase.getInstance().getReference();
   private FirebaseDatabase firebaseDatabase;
 
+  View balao;
   Context context;
   ArrayList<Palavra> listaPalavraClasse;
   ArrayList<String> listaPalavras;
-  Integer vidas;
+  Integer vidas = 3;
   AlertDialog mensagem;
   HistoricoErro historico;
   Usuarios usuario;
   Integer jogos;
   String uid;
   float xInicial;
+  Animation anim;
   float yInicial;
   private static final String TAG = "MainActivity";
 
@@ -75,10 +77,14 @@ public class MainActivity extends Activity implements
     listaPalavraClasse = readPalavras.getPalavras();
     listaPalavras = new ArrayList<>();
 
+    balao = (View)findViewById(R.id.layout);
+
     //TRANSFORMAR ARRAY PALAVRAS > ARRAY STRING//
     for(int i=0;i<listaPalavraClasse.size();i++){
       listaPalavras.add(listaPalavraClasse.get(i).getPalavra().toString());
     }
+
+
 
     context = getApplicationContext();
 
@@ -146,6 +152,9 @@ public class MainActivity extends Activity implements
 
     //Animação do balão descer//
     balaoandando();
+
+
+
 
     //Verifica a palavra quando o botão for clicado//
     botao.setOnClickListener(new View.OnClickListener() {
@@ -243,15 +252,37 @@ public class MainActivity extends Activity implements
 
     public void balaoandando(){
 
-        View Balao = (View)findViewById(R.id.layout);
+
         TextView txtPontuacao = (TextView)findViewById(R.id.txtPontuacao);
 
-        setRandomY(Balao,200);
-        Animation anim = new TranslateAnimation(Balao.getX(),1500,Balao.getY(),Balao.getY());
+        setRandomY(balao,200);
+        anim = new TranslateAnimation(balao.getX(),1500,balao.getY(),balao.getY());
         anim.setFillAfter(false);
         anim.setDuration(11000);
 
-      Balao.startAnimation(anim);
+      balao.startAnimation(anim);
+
+      anim.setAnimationListener(new Animation.AnimationListener() {
+        @Override
+        public void onAnimationStart(Animation animation) {
+
+        }
+
+        @Override
+        public void onAnimationEnd(Animation animation) {
+          balaoestourou(balao);
+          vidas = perdeuVida(vidas);
+          if(vidas!=0) {
+            gerarPalavra();
+            balaoandando();
+          }
+        }
+
+        @Override
+        public void onAnimationRepeat(Animation animation) {
+
+        }
+      });
 
     }
 
@@ -312,6 +343,7 @@ public class MainActivity extends Activity implements
     TextView texto = (TextView) txt.findViewById(R.id.texto);
 
     vidas--;
+
     if (vidas == 2) {
       ImageView img = (ImageView) findViewById(R.id.imgTerceiraVida);
       Drawable drawable = getResources().getDrawable(R.mipmap.coracaovazio);
@@ -501,6 +533,7 @@ public class MainActivity extends Activity implements
 
     return listaPalavras;
     }*/
+
 
 
 }
