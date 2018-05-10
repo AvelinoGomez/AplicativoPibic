@@ -7,8 +7,14 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Path;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,25 +25,39 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+import com.myscript.atk.core.Rectangle;
 import com.myscript.atk.sltw.SingleLineWidgetApi;
+import com.myscript.atk.sltw.sample.Adapter.ReferenciasErro;
 import com.myscript.atk.sltw.sample.BuildConfig;
 import com.myscript.atk.sltw.sample.CRUD.ReadPalavras;
 import com.myscript.atk.sltw.sample.CRUD.ReadUsuario;
 import com.myscript.atk.sltw.sample.CRUD.UpdateUsuario;
 import com.myscript.atk.sltw.sample.DAO.ConfiguracaoFirebase;
-import com.myscript.atk.sltw.sample.Entidades.HistoricoErro;
+import com.myscript.atk.sltw.sample.Entidades.Historico;
 import com.myscript.atk.sltw.sample.Entidades.Palavra;
 import com.myscript.atk.sltw.sample.Entidades.Usuarios;
 import com.myscript.atk.sltw.sample.R;
 import com.myscript.certificate.MyCertificate;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Random;
+
+import static android.os.Environment.DIRECTORY_PICTURES;
 
 
 public class MainActivity extends Activity implements
@@ -47,13 +67,19 @@ public class MainActivity extends Activity implements
   private DatabaseReference firebase = FirebaseDatabase.getInstance().getReference();
   private FirebaseDatabase firebaseDatabase;
 
+  private FirebaseStorage storage = FirebaseStorage.getInstance();
+  private StorageReference storageReference = storage.getReferenceFromUrl("gs://aplicativo-pibic.appspot.com");
+
+  String dataJogo;
+  ReferenciasErro refErro;
   View balao;
+  View layoutTeclado;
   Context context;
   ArrayList<Palavra> listaPalavraClasse;
   ArrayList<String> listaPalavras;
   Integer vidas = 3;
   AlertDialog mensagem;
-  HistoricoErro historico;
+  Historico historico;
   Usuarios usuario;
   Integer jogos;
   String uid;
@@ -73,18 +99,24 @@ public class MainActivity extends Activity implements
     Bundle dados = intent.getExtras();
     uid = dados.getString("uid").toString();
 
+    refErro = new ReferenciasErro();
+
     ReadPalavras readPalavras = new ReadPalavras(getApplicationContext());
     listaPalavraClasse = readPalavras.getPalavras();
     listaPalavras = new ArrayList<>();
+    layoutTeclado = (View)findViewById(R.id.layoutTeclado);
 
     balao = (View)findViewById(R.id.layout);
+
+      SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+      Date data = new Date();
+
+      dataJogo = sdf.format(data);
 
     //TRANSFORMAR ARRAY PALAVRAS > ARRAY STRING//
     for(int i=0;i<listaPalavraClasse.size();i++){
       listaPalavras.add(listaPalavraClasse.get(i).getPalavra().toString());
     }
-
-
 
     context = getApplicationContext();
 
@@ -123,6 +155,7 @@ public class MainActivity extends Activity implements
     });*/
 
 
+
     //RESGATANDO USUARIO//
     ReadUsuario r = new ReadUsuario(getApplicationContext());
     ArrayList<Usuarios> usuarios = r.getUsuarios();
@@ -136,7 +169,8 @@ public class MainActivity extends Activity implements
     //RESGATANDO USUARIO//
 
 
-    historico = new HistoricoErro(usuario.getId());
+    historico = new Historico();
+    historico.setUid(usuario.getId());
     vidas = 3;
 
     edtPontuacao.setText("0");
@@ -151,7 +185,9 @@ public class MainActivity extends Activity implements
     Balao.setX(-135);
 
     //Animação do balão descer//
-    balaoandando();
+    if(vidas!=0) {
+      balaoandando();
+    }
 
 
 
@@ -270,12 +306,12 @@ public class MainActivity extends Activity implements
 
         @Override
         public void onAnimationEnd(Animation animation) {
-          balaoestourou(balao);
-          vidas = perdeuVida(vidas);
-          if(vidas!=0) {
-            gerarPalavra();
-            balaoandando();
-          }
+                balaoestourou(balao);
+                vidas = perdeuVida(vidas);
+                if (vidas != 0) {
+                    gerarPalavra();
+                    balaoandando();
+                }
         }
 
         @Override
@@ -308,7 +344,6 @@ public class MainActivity extends Activity implements
 
     if (a.equals(palavra)) {
       Toast.makeText(getApplicationContext(), "Parabêns, você acertou", Toast.LENGTH_SHORT).show();
-      balaoestourou(txt);
 
       UpdateUsuario u = new UpdateUsuario(context);
 
@@ -329,10 +364,22 @@ public class MainActivity extends Activity implements
 
     }
     else{
-      vidas = perdeuVida(vidas);
-      gerarPalavra();
-      balaoandando();
 
+        if(vidas==3){
+            historico.setPalavraErro1(a);
+        }else if(vidas==2){
+            historico.setPalavraErro2(a);
+        }else{
+            historico.setPalavraErro3(a);
+        }
+
+      vidas = perdeuVida(vidas);
+      if(vidas!=0) {
+        gerarPalavra();
+        balaoandando();
+      }else{
+          historico.setPontuacao(txtPontuacao.getText().toString());
+      }
 
   }}
 
@@ -349,9 +396,7 @@ public class MainActivity extends Activity implements
       Drawable drawable = getResources().getDrawable(R.mipmap.coracaovazio);
       img.setImageDrawable(drawable);
 
-        Drawable d = mWidget.getWritingAreaBackground();
-
-        historico.setErro1(d);
+       printarLayout(layoutTeclado,"Erro1");
 
       Toast.makeText(getApplicationContext(), "Você perdeu uma vida, tente novamente", Toast.LENGTH_SHORT).show();
     } else if (vidas == 1) {
@@ -359,8 +404,7 @@ public class MainActivity extends Activity implements
       Drawable drawable = getResources().getDrawable(R.mipmap.coracaovazio);
       img.setImageDrawable(drawable);
 
-        Drawable d = mWidget.getWritingAreaBackground();
-        historico.setErro2(d);
+        printarLayout(layoutTeclado,"Erro2");
 
 
       Toast.makeText(getApplicationContext(), "Você perdeu uma vida, tente novamente", Toast.LENGTH_SHORT).show();
@@ -369,9 +413,9 @@ public class MainActivity extends Activity implements
       Drawable drawable = getResources().getDrawable(R.mipmap.coracaovazio);
       img.setImageDrawable(drawable);
 
-        Drawable d = mWidget.getWritingAreaBackground();
-        historico.setErro3(d);
+        printarLayout(layoutTeclado, "Erro3");
 
+      balao.setX(99999);
       salvarHistorico();
 
       MensagemFinal(uid);
@@ -386,8 +430,65 @@ public class MainActivity extends Activity implements
   }
 
 
+  void printarLayout(View view,String nomeArquivo){
 
-  public void gerarPalavra(){
+      SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+      Date data = new Date();
+
+      String dataFormatada = sdf.format(data);
+
+
+
+      view.setDrawingCacheEnabled(true);
+      view.buildDrawingCache();
+      Bitmap b1 = view.getDrawingCache();
+      Rect frame = new Rect();
+      getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
+      int statusBarHeight = frame.top;
+      int width = view.getWidth();
+      int height = view.getHeight();
+
+      Bitmap b = Bitmap.createBitmap(b1, 0, statusBarHeight, width, height - statusBarHeight);
+      view.destroyDrawingCache();
+      view.setDrawingCacheEnabled(false);
+
+      if(nomeArquivo.equals("Erro1")){
+          historico.setLocalErro1("gs://aplicativo-pibic.appspot.com/"+historico.getUid()+"/"+dataJogo+"/"+"Erro1");
+          refErro.setErro1(b);
+      }else if(nomeArquivo.equals("Erro2")){
+          historico.setLocalErro2("gs://aplicativo-pibic.appspot.com/"+historico.getUid()+"/"+dataJogo+"/"+"Erro2");
+          refErro.setErro2(b);
+      }else{
+          historico.setLocalErro3("gs://aplicativo-pibic.appspot.com/"+historico.getUid()+"/"+dataJogo+"/"+"Erro3");
+          refErro.setErro3(b);
+      }
+
+      /*
+      //SALVAR ARQUIVO//
+    FileOutputStream out = null;
+    try {
+
+        //Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+      out = new FileOutputStream(getExternalFilesDir(DIRECTORY_PICTURES)+dataFormatada+nomeArquivo);
+
+
+      b.compress(Bitmap.CompressFormat.PNG, 100, out); // bmp is your Bitmap instance
+      // PNG is a lossless format, the compression factor (100) is ignored
+    } catch (Exception e) {
+      e.printStackTrace();
+    } finally {
+      try {
+        if (out != null) {
+          out.close();
+        }
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    }*/
+
+  }
+
+    public void gerarPalavra(){
         View balao = (View)findViewById(R.id.layout);
       TextView text = (TextView)balao.findViewById(R.id.texto);
       int i=0;
@@ -436,20 +537,12 @@ public class MainActivity extends Activity implements
     final TextView txtPontuacao = (TextView)findViewById(R.id.txtPontuacao);
     TextView txtPontuacaoMsg = (TextView)view.findViewById(R.id.txtPontuacaoMsg);
 
-    /*ImageView img = (ImageView)findViewById(R.id.imagemMensagem);
-    img.setImageDrawable(historico.getErro1());*/
-
-    View balao = (View)findViewById(R.id.layout);
-
 
     txtPontuacaoMsg.setText("Parabens voce ganhou: " + txtPontuacao.getText() + " Creditos!");
 
-    balao.clearAnimation();
-    balao.setY(0);
-    balao.setX(0);
-
       //ATUALIZAR A PONTUAÇÃO
       atualizarPontuacao(uid2,txtPontuacao);
+      salvarHistorico();
 
     //definimos para o botão do layout um clickListener
     view.findViewById(R.id.bt).setOnClickListener(new View.OnClickListener() {
@@ -480,14 +573,54 @@ public class MainActivity extends Activity implements
 
   public void salvarHistorico(){
 
-        firebase.getRoot();
-        firebase = ConfiguracaoFirebase.getFirebase().child("Historico");
-        //firebase.child(historico.getUid()).child(usuario.getJogos()).setValue(historico);
+      Bitmap bmp = refErro.getErro1();
+      ByteArrayOutputStream stream = new ByteArrayOutputStream();
+      bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+      byte[] byteArray = stream.toByteArray();
+
+        DatabaseReference firebaseHistorico;
+
+        firebaseHistorico = ConfiguracaoFirebase.getFirebase().child("Historico").child(historico.getUid()).child(dataJogo);
+        firebaseHistorico.setValue(historico);
+
+        StorageReference filePath = storageReference.child(historico.getUid()).child(dataJogo).child("Erro1");
+
+        filePath.putBytes(byteArray).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                //Toast.makeText(context, "Erro 1 Inserido com Sucesso!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bmp = refErro.getErro2();
+        bmp.compress(Bitmap.CompressFormat.PNG,100,stream);
+        byteArray = stream.toByteArray();
+
+
+        filePath = storageReference.child(historico.getUid()).child(dataJogo).child("Erro2");
+        filePath.putBytes(byteArray).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                //Toast.makeText(context, "Erro2 Inserido com Sucesso!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+      bmp = refErro.getErro3();
+      bmp.compress(Bitmap.CompressFormat.PNG,100,stream);
+      byteArray = stream.toByteArray();
+
+        filePath = storageReference.child(historico.getUid()).child(dataJogo).child("Erro3");
+        filePath.putBytes(byteArray).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                //Toast.makeText(context, "Erro3 Inserido com sucesso!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
   }
 
   public void atualizarPontuacao(final String uid2, final TextView txtPontuacao){
-      firebase.getRoot();
       firebase = ConfiguracaoFirebase.getFirebase().child("Usuarios").child(uid2);
       firebase.addListenerForSingleValueEvent(new ValueEventListener() {
           @Override

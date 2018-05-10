@@ -8,7 +8,7 @@ package com.myscript.atk.text;
 
 public final class R {
     public static final class string {
-        public static final int myscript_core_placeholder = 0x7f0b0034;
-        public static final int myscript_text_placeholder = 0x7f0b0035;
+        public static final int myscript_core_placeholder = 0x7f0b0036;
+        public static final int myscript_text_placeholder = 0x7f0b0037;
     }
 }

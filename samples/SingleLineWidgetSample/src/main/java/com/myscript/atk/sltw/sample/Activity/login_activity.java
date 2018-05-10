@@ -74,13 +74,20 @@ public class login_activity extends AppCompatActivity {
         //Resgate palavra
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         //firebase = FirebaseDatabase.getInstance().getReference().child("Palavras");
-        DatabaseReference ref = database.getReference().child("Palavras");
+        DatabaseReference ref = database.getReference();
 
-        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+        ref.child("Palavras").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+
+                //SE UM FILHO FOR ALTERADO NAS PALAVRAS,ALL SQL É ATUALIZADO//
+                DeletePalavras del = new DeletePalavras(getApplicationContext());
+                del.deleteTable();
+
+                CreatePalavras createPalavras = new CreatePalavras(getApplicationContext());
+                createPalavras.createTable();
+
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
-                    palavraLista.add(postSnapshot.getValue(Palavra.class));
                     up.insertPalavra(postSnapshot.getValue(Palavra.class));
                 }
             }
@@ -92,18 +99,20 @@ public class login_activity extends AppCompatActivity {
         });
 
         ReadPalavras rp = new ReadPalavras(getApplicationContext());
-        ArrayList<Palavra> palavraListaBD = new ArrayList<Palavra>();
-        palavraListaBD = rp.getPalavras();
+        ArrayList<Palavra> palavraListaBD = rp.getPalavras();
 
-        if(palavraLista.size()!=palavraListaBD.size()){
+        /*if(palavraLista.size()!=palavraListaBD.size()){
             DeletePalavras del = new DeletePalavras(getApplicationContext());
             del.deleteTable();
+
+            CreatePalavras createPalavras = new CreatePalavras(getApplicationContext());
+            cp.createTable();
 
             for (int i = 0; i <palavraLista.size() ; i++) {
                 up.insertPalavra(palavraLista.get(i));
             }
 
-        }
+        }*/
 
 
         if(usuariosLista.size()!=0){
@@ -228,24 +237,6 @@ public class login_activity extends AppCompatActivity {
         startActivity(intentAbrirTelaPrincipal);
         finish();
 
-    }
-
-    public String resgatarModoUsuarioFirebase(String uid){
-        DatabaseReference firebase;
-        firebase = ConfiguracaoFirebase.getFirebase().child("Usuarios").child(uid);
-        firebase.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Usuarios usuario;
-                usuario= dataSnapshot.getValue(Usuarios.class);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                System.out.println("Erro na leitura do arquivo: " + databaseError.getCode());
-            }
-        });
-        return usuarios.getAdm();
     }
 
     public void abrirTelaPrincipalComum(String uid){

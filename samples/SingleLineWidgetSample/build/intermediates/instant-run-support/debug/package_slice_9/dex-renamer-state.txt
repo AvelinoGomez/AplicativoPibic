@@ -1,4 +1,4 @@
-#Wed Apr 18 11:15:57 BRT 2018
+#Thu May 10 14:13:44 BRT 2018
 base.0=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\10
 renamed.0=classes.dex
 file.0=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\10\\classes.dex

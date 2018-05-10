@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/layoutTeclado"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -85,8 +86,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginStart="30dp"
             android:layout_toEndOf="@+id/layout"
-            android:layout_toRightOf="@+id/layout"
-             />
+            android:layout_toRightOf="@+id/layout" />
 
         <ImageView
             android:id="@+id/imgSegundaVida"
@@ -94,16 +94,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toEndOf="@+id/imgPrimeiraVida"
-            android:layout_toRightOf="@+id/imgPrimeiraVida"
-            />
+            android:layout_toRightOf="@+id/imgPrimeiraVida" />
+
         <ImageView
             android:id="@+id/imgTerceiraVida"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toEndOf="@+id/imgSegundaVida"
-            android:layout_toRightOf="@+id/imgSegundaVida"
-             />
+            android:layout_toRightOf="@+id/imgSegundaVida" />
 
     </RelativeLayout>
 

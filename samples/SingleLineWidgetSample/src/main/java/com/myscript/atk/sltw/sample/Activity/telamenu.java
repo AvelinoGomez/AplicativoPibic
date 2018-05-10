@@ -67,6 +67,8 @@ public class telamenu extends AppCompatActivity {
         usuarios = r.getUsuarios();
         Usuarios usuario = usuarios.get(0);
 
+        final ReadPalavras rp = new ReadPalavras(getApplicationContext());
+
         firebase = ConfiguracaoFirebase.getFirebase().child("Usuarios").child(uid);
         firebase.setValue(usuario);
 
@@ -84,6 +86,10 @@ public class telamenu extends AppCompatActivity {
         botaojogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ArrayList<Palavra> palavras = rp.getPalavras();
+                if(palavras.size()==0){
+                    Toast.makeText(context, "Não existem palavras cadastradas!", Toast.LENGTH_SHORT).show();
+                }else
                 IrParaTelaJogar(uid);
             }
         });
