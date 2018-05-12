@@ -87,6 +87,7 @@
         <activity
             android:name="com.myscript.atk.sltw.sample.Activity.Admin_AbrirUsuario"
             android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.myscript.atk.sltw.sample.Activity.Admin_ErrosDoUsuario" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

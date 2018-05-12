@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 
 import com.google.firebase.database.Exclude;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +13,7 @@ import java.util.Map;
  * Created by Avelino on 10/03/2018.
  */
 
-public class Historico {
+public class Historico implements Serializable {
     private String uid;
     private String pontuacao;
     private String palavraErro1;

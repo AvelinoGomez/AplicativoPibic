@@ -5,27 +5,20 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.ToggleButton;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.myscript.atk.sltw.sample.Adapter.HistoricoAdapter;
-import com.myscript.atk.sltw.sample.Adapter.UsuariosAdapter;
-import com.myscript.atk.sltw.sample.CRUD.CreatePalavras;
-import com.myscript.atk.sltw.sample.CRUD.DeletePalavras;
 import com.myscript.atk.sltw.sample.DAO.ConfiguracaoFirebase;
 import com.myscript.atk.sltw.sample.Entidades.Historico;
-import com.myscript.atk.sltw.sample.Entidades.Palavra;
 import com.myscript.atk.sltw.sample.Entidades.Usuarios;
 import com.myscript.atk.sltw.sample.R;
 
@@ -52,17 +45,24 @@ public class Admin_AbrirUsuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adm_abrir_usuario);
 
-
-
         intent = getIntent();
 
         usuarios = (Usuarios)getIntent().getSerializableExtra("usuario");
 
         InstanciarComponentes();
-
         refreshLista();
 
 
+        edtDescricaoAluno.setText(usuarios.getMensagem());
+        txtAluno.setText("");
+        txtAluno.setText(txtAluno.getText()+usuarios.getNome()+" "+usuarios.getSobrenome());
+
+        listJogos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                abrirActivityErros(listaHistoricos.get(position));
+            }
+        });
 
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -79,6 +79,12 @@ public class Admin_AbrirUsuario extends AppCompatActivity {
         });
 
 
+    }
+
+    public void abrirActivityErros(Historico historico){
+        Intent intentAbrirErro = new Intent(Admin_AbrirUsuario.this,Admin_ErrosDoUsuario.class);
+        intentAbrirErro.putExtra("historico",historico);
+        startActivity(intentAbrirErro);
     }
 
     public void carregarDescricao(Usuarios usuario,String msg){
@@ -125,10 +131,6 @@ public class Admin_AbrirUsuario extends AppCompatActivity {
         listJogos = (ListView)findViewById(R.id.aaau_listJogos);
         txtAluno = (TextView)findViewById(R.id.aaau_edtAluno);
         swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.aaau_swipe);
-
-        edtDescricaoAluno.setText(usuarios.getMensagem());
-        txtAluno.setText("");
-        txtAluno.setText(txtAluno.getText()+usuarios.getNome()+" "+usuarios.getSobrenome());
     }
 
     public void refreshTela(Intent intent) {
