@@ -40,7 +40,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.myscript.atk.sltw.sample.Activity.login_activity"
+            android:name="com.myscript.atk.sltw.sample.Activity.Login_activity"
             android:configChanges="orientation|screenSize"
             android:label="PIBIC"
             android:noHistory="false"
@@ -53,15 +53,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.myscript.atk.sltw.sample.Activity.telaconfig"
+            android:name="com.myscript.atk.sltw.sample.Activity.Usuario_Config"
             android:noHistory="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name="com.myscript.atk.sltw.sample.Activity.MainActivity"
+            android:name="com.myscript.atk.sltw.sample.Activity.Usuario_Jogando"
             android:noHistory="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name="com.myscript.atk.sltw.sample.Activity.telamenu"
+            android:name="com.myscript.atk.sltw.sample.Activity.Usuario_Menu"
             android:noHistory="false"
             android:screenOrientation="landscape" />
         <activity
@@ -69,23 +69,23 @@
             android:noHistory="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name="com.myscript.atk.sltw.sample.Activity.PrincipalAdm" />
-        <activity android:name="com.myscript.atk.sltw.sample.Activity.MenuAdm" />
-        <activity android:name="com.myscript.atk.sltw.sample.Activity.ConfigAdm" />
+        <activity android:name="com.myscript.atk.sltw.sample.Activity.Admin_ListarUsuarios" />
+        <activity android:name="com.myscript.atk.sltw.sample.Activity.Admin_Menu" />
+        <activity android:name="com.myscript.atk.sltw.sample.Activity.Admin_Config" />
         <activity
-            android:name="com.myscript.atk.sltw.sample.Activity.AdicionarPalavra"
+            android:name="com.myscript.atk.sltw.sample.Activity.Usuario_AdicionarPalavra"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.myscript.atk.sltw.sample.Activity.loja"
+            android:name="com.myscript.atk.sltw.sample.Activity.Usuario_Loja"
             android:screenOrientation="landscape" />
         <activity
-            android:name="com.myscript.atk.sltw.sample.Activity.paletaCoresLapis"
+            android:name="com.myscript.atk.sltw.sample.Activity.Usuario_CoresLapis"
             android:screenOrientation="landscape" />
         <activity
-            android:name="com.myscript.atk.sltw.sample.Activity.paletaCoresPapel"
+            android:name="com.myscript.atk.sltw.sample.Activity.Usuario_CoresBackground"
             android:screenOrientation="landscape" />
         <activity
-            android:name="com.myscript.atk.sltw.sample.Activity.AdmAbrirUsuario"
+            android:name="com.myscript.atk.sltw.sample.Activity.Admin_AbrirUsuario"
             android:windowSoftInputMode="stateHidden" />
 
         <receiver

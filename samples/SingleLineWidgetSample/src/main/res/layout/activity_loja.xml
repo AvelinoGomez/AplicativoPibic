@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#33ecef3d"
-    tools:context="com.myscript.atk.sltw.sample.Activity.loja">
+    tools:context="com.myscript.atk.sltw.sample.Activity.Usuario_Loja">
 
     <LinearLayout
         android:layout_width="match_parent"

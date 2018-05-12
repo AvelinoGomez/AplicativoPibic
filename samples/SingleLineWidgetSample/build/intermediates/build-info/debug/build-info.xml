@@ -5,39 +5,28 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.0"
-    timestamp="1526099271185"
+    timestamp="1526143021542"
     token="2969183742611555030"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1262" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="18" />
+        duration="0" />
     <task
         name="verifier"
-        duration="32" />
-
-    <artifact
-        location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\outputs\apk\debug\SingleLineWidgetSample-debug.apk"
-        type="SPLIT_MAIN" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1526098657300"
+        timestamp="1526142884104"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
@@ -48,49 +37,36 @@
             location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\outputs\apk\debug\SingleLineWidgetSample-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1526099001256"
-        verifier="COLD_SWAP_REQUESTED" >
+            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
         <artifact
-            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\outputs\apk\debug\SingleLineWidgetSample-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1526099271185"
-        verifier="COLD_SWAP_REQUESTED" >
+            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
         <artifact
-            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\outputs\apk\debug\SingleLineWidgetSample-debug.apk"
             type="SPLIT_MAIN" />
     </build>
+    <build
+        build-mode="COLD"
+        timestamp="1526143021542"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

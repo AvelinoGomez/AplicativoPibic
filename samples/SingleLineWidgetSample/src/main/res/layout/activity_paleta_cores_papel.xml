@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.myscript.atk.sltw.sample.Activity.paletaCoresPapel">
+    tools:context="com.myscript.atk.sltw.sample.Activity.Usuario_CoresBackground">
 
 </android.support.constraint.ConstraintLayout>

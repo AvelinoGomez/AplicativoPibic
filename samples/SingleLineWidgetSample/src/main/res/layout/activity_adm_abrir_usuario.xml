@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:background="#33ecef3d"
         android:orientation="vertical"
-        tools:context="com.myscript.atk.sltw.sample.Activity.AdmAbrirUsuario">
+        tools:context="com.myscript.atk.sltw.sample.Activity.Admin_AbrirUsuario">
 
 
         <LinearLayout
