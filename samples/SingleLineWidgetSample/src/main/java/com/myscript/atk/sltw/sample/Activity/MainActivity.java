@@ -113,6 +113,7 @@ public class MainActivity extends Activity implements
 
       dataJogo = sdf.format(data);
 
+
     //TRANSFORMAR ARRAY PALAVRAS > ARRAY STRING//
     for(int i=0;i<listaPalavraClasse.size();i++){
       listaPalavras.add(listaPalavraClasse.get(i).getPalavra().toString());
@@ -171,6 +172,7 @@ public class MainActivity extends Activity implements
 
     historico = new Historico();
     historico.setUid(usuario.getId());
+    historico.setData(dataJogo);
     vidas = 3;
 
     edtPontuacao.setText("0");
@@ -570,52 +572,41 @@ public class MainActivity extends Activity implements
     finish();
   }
 
+  public void uparBitmap (int erro){
+      Bitmap bmp;
+      if(erro==1){
+         bmp = refErro.getErro1();
 
-  public void salvarHistorico(){
-
-      Bitmap bmp = refErro.getErro1();
+      }else if(erro == 2){
+          bmp = refErro.getErro2();
+      }else{
+          bmp = refErro.getErro3();
+      }
       ByteArrayOutputStream stream = new ByteArrayOutputStream();
       bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
       byte[] byteArray = stream.toByteArray();
 
-        DatabaseReference firebaseHistorico;
+      DatabaseReference firebaseHistorico;
 
-        firebaseHistorico = ConfiguracaoFirebase.getFirebase().child("Historico").child(historico.getUid()).child(dataJogo);
-        firebaseHistorico.setValue(historico);
+      firebaseHistorico = ConfiguracaoFirebase.getFirebase().child("Historico").child(historico.getUid()).child(dataJogo);
+      firebaseHistorico.setValue(historico);
 
-        StorageReference filePath = storageReference.child(historico.getUid()).child(dataJogo).child("Erro1");
+      StorageReference filePath = storageReference.child(historico.getUid()).child(dataJogo).child("Erro"+erro);
 
-        filePath.putBytes(byteArray).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                //Toast.makeText(context, "Erro 1 Inserido com Sucesso!", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        bmp = refErro.getErro2();
-        bmp.compress(Bitmap.CompressFormat.PNG,100,stream);
-        byteArray = stream.toByteArray();
+      filePath.putBytes(byteArray).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+          @Override
+          public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+              //Toast.makeText(context, "Erro 1 Inserido com Sucesso!", Toast.LENGTH_SHORT).show();
+          }
+      });
+  }
 
 
-        filePath = storageReference.child(historico.getUid()).child(dataJogo).child("Erro2");
-        filePath.putBytes(byteArray).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                //Toast.makeText(context, "Erro2 Inserido com Sucesso!", Toast.LENGTH_SHORT).show();
-            }
-        });
+  public void salvarHistorico(){
 
-      bmp = refErro.getErro3();
-      bmp.compress(Bitmap.CompressFormat.PNG,100,stream);
-      byteArray = stream.toByteArray();
-
-        filePath = storageReference.child(historico.getUid()).child(dataJogo).child("Erro3");
-        filePath.putBytes(byteArray).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                //Toast.makeText(context, "Erro3 Inserido com sucesso!", Toast.LENGTH_SHORT).show();
-            }
-        });
+     uparBitmap(1);
+     uparBitmap(2);
+     uparBitmap(3);
 
 
   }

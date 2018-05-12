@@ -23,7 +23,9 @@ public class Historico {
    // private Bitmap erro2;
     private String palavraErro3;
     private String localErro3;
+    private String data;
    // private Bitmap erro3;
+
 
 
 
@@ -42,8 +44,17 @@ public class Historico {
         hashMapHistorico.put("localErro1",getLocalErro1());
         hashMapHistorico.put("localErro2",getLocalErro2());
         hashMapHistorico.put("localErro3",getLocalErro3());
+        hashMapHistorico.put("data",getData());
 
         return hashMapHistorico;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 
     public String getLocalErro1() {

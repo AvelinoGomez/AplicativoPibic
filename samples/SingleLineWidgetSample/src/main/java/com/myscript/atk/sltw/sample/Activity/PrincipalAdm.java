@@ -3,6 +3,7 @@ package com.myscript.atk.sltw.sample.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.provider.ContactsContract;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -38,11 +39,11 @@ public class PrincipalAdm extends AppCompatActivity {
     private DatabaseReference firebase = FirebaseDatabase.getInstance().getReference();
     private FirebaseDatabase firebaseDatabase;
 
-
+    private SwipeRefreshLayout swipeRefreshLayout;
     private EditText edtPalavra;
     private ArrayList<Usuarios> listaPessoas = new ArrayList<>();
     private UsuariosAdapter usuariosArrayAdapter;
-    private Button btnRefresh;
+
 
 
     Context context;
@@ -52,53 +53,60 @@ public class PrincipalAdm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal_adm);
         ListView list = (ListView)findViewById(R.id.apa_listUsuarios);
-
-        btnRefresh = (Button)findViewById(R.id.apa_btnRefresh);
+        swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.apa_swipe);
 
         list.deferNotifyDataSetChanged();
         refreshLista();
+
         context = this;
 
-
-        btnRefresh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                refreshTela(getIntent());
-            }
-        });
+       swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+           @Override
+           public void onRefresh() {
+               refreshTela(getIntent());
+           }
+       });
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                abrirActivityUsuario(listaPessoas.get(position));
             }
         });
 
+    }
 
+
+    public void abrirActivityUsuario(Usuarios usuarios){
+        Intent intentAbrirUsuario = new Intent(PrincipalAdm.this,AdmAbrirUsuario.class);
+        intentAbrirUsuario.putExtra("usuario",usuarios);
+        startActivity(intentAbrirUsuario);
+        finish();
     }
 
     public ArrayList<Usuarios> preencherListaUsuarios() {
 
-            firebase.child("Usuarios").orderByChild("adm").equalTo("0").addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                        listaPessoas.add(postSnapshot.getValue(Usuarios.class));
-                    }
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference().child("Usuarios");
+        ref.orderByChild("adm").equalTo("0").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                    listaPessoas.add(postSnapshot.getValue(Usuarios.class));
                 }
+            }
 
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
 
-                }
-            });
+            }
+        });
         return listaPessoas;
     }
 
     public void refreshLista(){
         ListView list = (ListView)findViewById(R.id.apa_listUsuarios);
         listaPessoas = preencherListaUsuarios();
-
         usuariosArrayAdapter = new UsuariosAdapter(this,listaPessoas);
         usuariosArrayAdapter.notifyDataSetChanged();
         list.setAdapter(usuariosArrayAdapter);

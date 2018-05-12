@@ -19,7 +19,6 @@
         android:smallScreens="true"
         android:xlargeScreens="true" />
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -29,12 +28,15 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.myscript.atk.sltw.sample.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:debuggable="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="Reconhecimento Manuscrito "
+        android:largeHeap="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
@@ -65,11 +67,14 @@
         <activity
             android:name="com.myscript.atk.sltw.sample.Activity.CadastroActivity"
             android:noHistory="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name="com.myscript.atk.sltw.sample.Activity.PrincipalAdm" />
         <activity android:name="com.myscript.atk.sltw.sample.Activity.MenuAdm" />
         <activity android:name="com.myscript.atk.sltw.sample.Activity.ConfigAdm" />
-        <activity android:name="com.myscript.atk.sltw.sample.Helper.AdicionarPalavra" />
+        <activity
+            android:name="com.myscript.atk.sltw.sample.Activity.AdicionarPalavra"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.myscript.atk.sltw.sample.Activity.loja"
             android:screenOrientation="landscape" />
@@ -79,6 +84,9 @@
         <activity
             android:name="com.myscript.atk.sltw.sample.Activity.paletaCoresPapel"
             android:screenOrientation="landscape" />
+        <activity
+            android:name="com.myscript.atk.sltw.sample.Activity.AdmAbrirUsuario"
+            android:windowSoftInputMode="stateHidden" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

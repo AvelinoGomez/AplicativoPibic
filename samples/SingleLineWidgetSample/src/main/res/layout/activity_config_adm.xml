@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -54,13 +61,6 @@
                 android:text="Lista de Palavras"
                 android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/aca_btnRefresh"
-                android:layout_width="43dp"
-                android:layout_height="46dp"
-                android:layout_margin="3dp"
-                android:layout_marginRight="0dp"
-                android:background="@mipmap/ic_refresh" />
         </LinearLayout>
 
         <LinearLayout
@@ -78,3 +78,5 @@
     </LinearLayout>
 
 </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

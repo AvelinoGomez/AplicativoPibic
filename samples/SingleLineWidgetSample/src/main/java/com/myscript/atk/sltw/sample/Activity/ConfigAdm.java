@@ -2,6 +2,7 @@ package com.myscript.atk.sltw.sample.Activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,7 +40,7 @@ public class ConfigAdm extends AppCompatActivity {
     private ArrayList<Palavra> listaPalavras = new ArrayList<>();
     EditText aca_edtAddPalavra;
     Button aca_btnAddPalavra;
-    Button aca_btnRefresh;
+    SwipeRefreshLayout mSwipeToRefresh;
     private PalavrasAdapter palavrasArrayAdapter;
     Context context;
 
@@ -50,7 +51,7 @@ public class ConfigAdm extends AppCompatActivity {
         setContentView(R.layout.activity_config_adm);
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-        Intent intent = getIntent();
+        final Intent intent = getIntent();
         Bundle dados = intent.getExtras();
         uid = dados.getString("uid").toString();
 
@@ -80,10 +81,10 @@ public class ConfigAdm extends AppCompatActivity {
             }
         });
 
-        aca_btnRefresh.setOnClickListener(new View.OnClickListener() {
+        mSwipeToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
-            public void onClick(View v) {
-                refreshTela(getIntent());
+            public void onRefresh() {
+                refreshTela(intent);
             }
         });
 
@@ -177,7 +178,7 @@ public class ConfigAdm extends AppCompatActivity {
         aca_btnAddPalavra = (Button)findViewById(R.id.aca_btnAddPalavra);
         aca_edtAddPalavra = (EditText)findViewById(R.id.aca_edtAddPalavra);
         aca_listPalavras = (ListView)findViewById(R.id.aca_listaPalavras);
-        aca_btnRefresh = (Button)findViewById(R.id.aca_btnRefresh);
+        mSwipeToRefresh = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_container);
     }
 
     public void refreshTela(Intent intent) {

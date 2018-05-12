@@ -6,6 +6,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 import com.myscript.atk.sltw.sample.DAO.ConfiguracaoFirebase;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ import java.util.Map;
  * Created by Avelino on 05/02/2018.
  */
 
-public class Usuarios {
+public class Usuarios implements Serializable{
 
     private String id;
     private String adm;
@@ -172,4 +173,5 @@ public class Usuarios {
     public void setAnoNascimento(String anoNascimento) {
         this.anoNascimento = anoNascimento;
     }
+
 }

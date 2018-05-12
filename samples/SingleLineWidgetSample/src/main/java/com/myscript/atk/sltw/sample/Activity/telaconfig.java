@@ -18,7 +18,6 @@ import com.myscript.atk.sltw.sample.CRUD.ReadUsuario;
 import com.myscript.atk.sltw.sample.DAO.ConfiguracaoFirebase;
 import com.myscript.atk.sltw.sample.Entidades.Palavra;
 import com.myscript.atk.sltw.sample.Entidades.Usuarios;
-import com.myscript.atk.sltw.sample.Helper.AdicionarPalavra;
 import com.myscript.atk.sltw.sample.R;
 
 import java.util.ArrayList;
