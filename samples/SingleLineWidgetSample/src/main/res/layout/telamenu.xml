@@ -29,6 +29,7 @@
                 android:inputType="number"
                 android:selectAllOnFocus="false"
                 android:text="0"
+                android:textColor="@android:color/background_dark"
                 tools:clickable="false" />
 
             <EditText
@@ -42,6 +43,7 @@
                 android:enabled="false"
                 android:inputType="text"
                 android:selectAllOnFocus="false"
+                android:textColor="@android:color/background_dark"
                 android:textColorLink="@android:color/black"
                 android:textSize="18sp"
                 tools:clickable="false" />

@@ -25,6 +25,7 @@
             android:inputType="number"
             android:selectAllOnFocus="false"
             android:text="0"
+            android:textColor="@android:color/background_dark"
             tools:clickable="false" />
 
         <EditText
@@ -37,22 +38,12 @@
             android:enabled="false"
             android:inputType="text"
             android:selectAllOnFocus="false"
+            android:textColor="@android:color/background_dark"
             android:textColorLink="@android:color/black"
             android:textSize="18sp"
             tools:clickable="false" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/tc_btnGoToADD"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginRight="160dp"
-        android:layout_marginTop="20dp"
-        android:text="Adicionar Palavra" />
 
     <Button
         android:id="@+id/tc_paletaCores"

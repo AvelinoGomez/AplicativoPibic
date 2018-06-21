@@ -29,6 +29,7 @@
                 android:enabled="false"
                 android:inputType="text"
                 android:selectAllOnFocus="false"
+                android:textColor="@android:color/background_dark"
                 android:textColorLink="@android:color/black"
                 android:textSize="18sp"
                 tools:clickable="false" />

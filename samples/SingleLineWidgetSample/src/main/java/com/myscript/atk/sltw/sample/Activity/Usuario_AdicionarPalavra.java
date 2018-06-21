@@ -1,4 +1,4 @@
-package com.myscript.atk.sltw.sample.Activity;
+/*package com.myscript.atk.sltw.sample.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -163,3 +163,4 @@ public class Usuario_AdicionarPalavra extends AppCompatActivity {
     }
 
 
+*/

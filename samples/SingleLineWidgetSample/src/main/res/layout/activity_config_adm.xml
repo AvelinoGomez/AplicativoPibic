@@ -24,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Adicionar Palavra"
+            android:textColor="@android:color/background_dark"
             android:textColorLink="@android:color/black"
             android:textSize="18sp" />
 
@@ -60,6 +61,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:text="Lista de Palavras"
+                android:textColor="@android:color/background_dark"
                 android:textColorLink="@android:color/black"
                 android:textSize="18sp" />
 

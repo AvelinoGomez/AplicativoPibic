@@ -36,7 +36,7 @@ public class Usuario_Config extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.telaconfig);
-        Button btnGoToADD = (Button)findViewById(R.id.tc_btnGoToADD);
+        //Button btnGoToADD = (Button)findViewById(R.id.tc_btnGoToADD);
         Button tc_paletaCores = (Button)findViewById(R.id.tc_paletaCores);
         Button tc_background = (Button)findViewById(R.id.tc_paletaPapel);
         view = (View)findViewById(R.id.layout_telaconfig);
@@ -88,12 +88,12 @@ public class Usuario_Config extends AppCompatActivity {
         }
         //
 
-        btnGoToADD.setOnClickListener(new View.OnClickListener() {
+        /*btnGoToADD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 irParaAdicionarPalavra(uid);
             }
-        });
+        });*/
 
         tc_paletaCores.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,7 +135,7 @@ public class Usuario_Config extends AppCompatActivity {
         finish();
     }
 
-    public void irParaAdicionarPalavra(String uid){
+    /*public void irParaAdicionarPalavra(String uid){
         Bundle bundle = new Bundle();
         bundle.putString("uid",uid);
         Intent intent = new Intent(this, Usuario_AdicionarPalavra.class);
@@ -178,7 +178,7 @@ public class Usuario_Config extends AppCompatActivity {
         });
 
         return retorno;
-    }
+    }*/
 
 
 }

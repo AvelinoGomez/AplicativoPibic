@@ -37,7 +37,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Reconhecimento Manuscrito "
         android:largeHeap="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.myscript.atk.sltw.sample.Activity.Login_activity"

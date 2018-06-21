@@ -80,13 +80,14 @@ public class Usuario_CoresBackground extends AppCompatActivity {
                 SetarCorUsuario(32,112,160,v);
             }
         });
-        paleta_Cinza.setBackgroundColor(Color.rgb(80,200,120));
+        paleta_Cinza.setBackgroundColor(Color.rgb(196,196,196));
         paleta_Cinza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SetarCorUsuario(128,128,128,v);
+                SetarCorUsuario(196,196,196,v);
             }
         });
+        paleta_Esmeralda.setBackgroundColor(Color.rgb(80,200,120));
         paleta_Esmeralda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -175,9 +176,6 @@ public class Usuario_CoresBackground extends AppCompatActivity {
         }
     }
 
-    void InicializarBotoes(){
-
-    }
 
 }
 

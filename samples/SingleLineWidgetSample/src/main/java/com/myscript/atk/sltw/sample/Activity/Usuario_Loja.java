@@ -63,8 +63,7 @@ public class Usuario_Loja extends AppCompatActivity {
 
         instanciarComponentes();
 
-        setBackgroundTela(1);
-        setMensagemTela(1);
+
 
         /*//Resgatando Usuario//
         firebase = ConfiguracaoFirebase.getFirebase().child("Usuarios").child(uid);
@@ -92,6 +91,9 @@ public class Usuario_Loja extends AppCompatActivity {
         ReadUsuario r = new ReadUsuario(getApplicationContext());
         final ArrayList<Usuarios> usuariosLista = r.getUsuarios();
         usuario = usuariosLista.get(0);
+
+        setBackgroundTela(Integer.valueOf(usuario.getBackGround()));
+        setMensagemTela(Integer.valueOf(usuario.getAvatar()));
 
         edtNomeLoja.setText(usuario.getNome()+" "+usuario.getSobrenome());
         edtPontuacao.setText(usuario.getPontuacao());

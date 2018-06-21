@@ -1,0 +1,80 @@
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.4.0.aar\afccbb139fef82d0a1b9855de73c6ec2\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.4.0.aar\1c2bc14973759226838bfcc292f9e801\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.4.0.aar\47fcf7a2c2c6d56cc3525f1809068b36\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-11.6.2.aar\cf8bd00758866b6fd7982d90f0c24e6e\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.2.aar\7295325f1e85a0b935e2774ce335dc0e\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.6.2.aar\055f92294d7b7e552c21cd562580102f\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.6.2.aar\aecc30c62f101cf39b3edc06ae994fec\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.2.aar\4a75c91047cf8b2d15ff80b853469d2a\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.2.aar\49f4217b428670fb80ba00ba6b1c41c5\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.2.aar\77e2c3703f5b6c5235963b0d8bcd9cff\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.2.aar\8ce7c30c9ee24a820fe0db9ca9355b78\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.2.aar\0db83d935bb664af0d31de898e840d87\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\b0f78333b3cb2120b6e34c72a7f4d28d\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.2.aar\a83575e5adf5cc261911edbfd6ceff8f\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.6.2.aar\969c18e9ed37107a24062d9b3922643b\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\6c34f20c366019c90c328b2d1dd71139\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\937e7cede81b323c6690cee3c50340f6\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Core-android-component.aar\918c71411e7017b439470fd553758700\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-Text-android-component.aar\d8f64b3b357b032b7d9617de4a3a65b5\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-IMCommon-android-component.aar\8d63dcf8f60c7e3b9b15d4e108bcd540\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\MyScript_ATK-SingleLineWidget-android-widget.aar\e5af4a7a7a67e7665ea775d46aff4c37\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\6988157c095291020d24dd93fb3785ee\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\293476adf0747ab7c6fffe6067989afb\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\1130212c67cafc12cd0526aa2d702a6c\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\45fb83a3eed4b8a726c9b3fbcabc1534\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\da6e02fce8e5e5c0100693d6382d2aaa\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\afdeffed2265cc1a4dc1d936c3a13f3d\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9c826e86aa9df95a0228b3b055e901f6\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.2.aar\484eb2753531020e7ba51ce3c4235b71\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.2.aar\f957241d7cc300585768cd04bba9cb40\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-11.6.2.aar\e9947b56654310feade3efcbd5d635ba\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.2.aar\890d9b44467f896dbd260817e8c518aa\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.2.aar\6689d17632a98246411be6cb3e8389de\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.2.aar\f5bf03878ac32fd3f4ce7b1382553ef2\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.2.aar\13022719109cbe09506231fe620b8b49\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.2.aar\9264c052a60a82c6352706e9a5cfdb53\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.6.2.aar\ab1128ebcba7227f9df613994afa4729\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.2.aar\9557c3b65f60fc87baaf9f1d38a2e32d\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.2.aar\c21de751c8c4bd995a275e055d5deff4\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.2.aar\e0d2e1e3e9f8d5e697fcd3f5d7492fb8\jars\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\Desktop\AplicativoPibic\samples\myscript-certificate\build\intermediates\intermediate-jars\debug\classes.jar'(**.class)
+-injars 'C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\classes\debug'(**.class)
+-outjars 'C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\Avelino\AppData\Local\Android\Sdk\build-tools\26.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'C:\Users\Avelino\Desktop\AplicativoPibic\samples\SingleLineWidgetSample\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}

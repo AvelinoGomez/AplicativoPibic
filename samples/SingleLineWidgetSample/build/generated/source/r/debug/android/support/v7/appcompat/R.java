@@ -550,17 +550,17 @@ public final class R {
         public static final int status_bar_latest_event_content = 0x7f0700c2;
         public static final int submit_area = 0x7f0700c3;
         public static final int tabMode = 0x7f0700c5;
-        public static final int text = 0x7f0700c9;
-        public static final int text2 = 0x7f0700ca;
-        public static final int textSpacerNoButtons = 0x7f0700cb;
-        public static final int time = 0x7f0700d2;
-        public static final int title = 0x7f0700d3;
-        public static final int title_template = 0x7f0700d4;
-        public static final int topPanel = 0x7f0700d5;
-        public static final int up = 0x7f0700d9;
-        public static final int useLogo = 0x7f0700da;
-        public static final int withText = 0x7f0700dd;
-        public static final int wrap_content = 0x7f0700df;
+        public static final int text = 0x7f0700c8;
+        public static final int text2 = 0x7f0700c9;
+        public static final int textSpacerNoButtons = 0x7f0700ca;
+        public static final int time = 0x7f0700d1;
+        public static final int title = 0x7f0700d2;
+        public static final int title_template = 0x7f0700d3;
+        public static final int topPanel = 0x7f0700d4;
+        public static final int up = 0x7f0700d8;
+        public static final int useLogo = 0x7f0700d9;
+        public static final int withText = 0x7f0700dc;
+        public static final int wrap_content = 0x7f0700de;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur = 0x7f080000;
