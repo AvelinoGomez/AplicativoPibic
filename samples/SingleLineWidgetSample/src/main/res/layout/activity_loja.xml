@@ -9,10 +9,12 @@
     tools:context="com.myscript.atk.sltw.sample.Activity.Usuario_Loja">
 
     <LinearLayout
+        android:id="@+id/layoutLoja"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/layoutLoja"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -51,8 +53,8 @@
                         android:layout_height="133dp"
                         android:layout_marginLeft="75dp"
                         android:layout_marginRight="75dp"
-                        android:adjustViewBounds="true"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true" />
 
                     <Button
                         android:id="@+id/al_btnDirFundo"
@@ -127,6 +129,9 @@
                     android:id="@+id/al_btnSalvar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
                     android:text="Salvar" />
 
             </LinearLayout>

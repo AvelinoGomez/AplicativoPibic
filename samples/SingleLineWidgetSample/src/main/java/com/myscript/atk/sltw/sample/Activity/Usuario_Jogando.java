@@ -83,7 +83,7 @@ public class Usuario_Jogando extends Activity implements
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    setContentView(R.layout.activity_main_nuvem);
 
     Intent intent = getIntent();
     Bundle dados = intent.getExtras();
@@ -98,6 +98,8 @@ public class Usuario_Jogando extends Activity implements
 
     balao = (View)findViewById(R.id.layout);
 
+
+
       SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
       Date data = new Date();
 
@@ -111,6 +113,7 @@ public class Usuario_Jogando extends Activity implements
 
     context = getApplicationContext();
 
+      ImageView imgAvatar = (ImageView)findViewById(R.id.viewAvatar);
     Button botao = (Button)findViewById(R.id.confirmar);
     View Balao = (View) findViewById(R.id.layout);
     mWidget = (SingleLineWidgetApi) findViewById(R.id.singleLine_widget);
@@ -225,13 +228,25 @@ public class Usuario_Jogando extends Activity implements
     // of the input method accordingly.
 
     //BACKGROUND ESCOLHIDO//
+      if(usuario.getFlagFundo().equals("1")){
     if(usuario.getBackGround().equals("0")){
       mWidget.setWritingAreaBackgroundResource(R.drawable.background1);
     }else if(usuario.getBackGround().equals("1")){
       mWidget.setWritingAreaBackgroundResource(R.drawable.background2);
     }else{
       mWidget.setWritingAreaBackgroundResource(R.drawable.background3);
-    }
+    }}else{
+          mWidget.setWritingAreaBackgroundColor(Integer.valueOf(usuario.getCorBackGround()));
+      }
+
+    //AVATAR ESCOLHIDO//
+      if(usuario.getAvatar().equals("0")){
+        imgAvatar.setBackgroundResource(R.mipmap.avatar_carro);
+      }else if(usuario.getAvatar().equals("1")){
+          imgAvatar.setBackgroundResource(R.mipmap.avatar_lancha);
+      }else{
+          imgAvatar.setBackgroundResource(R.mipmap.ic_launcher);
+      }
 
     //COR TRAÇADO//
 

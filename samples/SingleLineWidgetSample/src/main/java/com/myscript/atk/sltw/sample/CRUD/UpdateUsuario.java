@@ -55,6 +55,9 @@ public class UpdateUsuario extends SQLiteOpenHelper {
             cv.put("MENSAGEM",usuario.getMensagem());
             cv.put("SENHA",usuario.getSenha());
             cv.put("CORLAPIS",usuario.getCorLapis());
+            cv.put("AVATAR",usuario.getAvatar());
+            cv.put("CORBACKGROUND",usuario.getCorBackGround());
+            cv.put("FLAGBACKGROUND",usuario.getFlagFundo());
 
             db.insert(TABELA_USUARIO,null,cv);
             return true;
@@ -89,6 +92,9 @@ public class UpdateUsuario extends SQLiteOpenHelper {
             cv.put("MENSAGEM",usuario.getMensagem());
             cv.put("SENHA",usuario.getSenha());
             cv.put("CORLAPIS",usuario.getCorLapis());
+            cv.put("AVATAR",usuario.getAvatar());
+            cv.put("CORBACKGROUND",usuario.getCorBackGround());
+            cv.put("FLAGBACKGROUND",usuario.getFlagFundo());
 
             db.update(TABELA_USUARIO,cv,where,null);
             return true;

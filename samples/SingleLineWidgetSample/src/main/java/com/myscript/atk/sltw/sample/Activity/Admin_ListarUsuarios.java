@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -73,21 +74,26 @@ public class Admin_ListarUsuarios extends AppCompatActivity {
 
     public ArrayList<Usuarios> preencherListaUsuarios() {
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference().child("Usuarios");
-        ref.orderByChild("adm").equalTo("0").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    listaPessoas.add(postSnapshot.getValue(Usuarios.class));
+        try {
+            FirebaseDatabase database = FirebaseDatabase.getInstance();
+            DatabaseReference ref = database.getReference().child("Usuarios");
+            ref.orderByChild("adm").equalTo("0").addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                        listaPessoas.add(postSnapshot.getValue(Usuarios.class));
+                    }
                 }
-            }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
 
-            }
-        });
+                }
+            });
+        }catch(Exception e){
+            Toast.makeText(context, "Não foi possível se conectar ao servidor!", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
         return listaPessoas;
     }
 

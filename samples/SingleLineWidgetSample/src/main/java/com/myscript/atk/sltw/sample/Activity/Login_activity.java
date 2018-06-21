@@ -22,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.myscript.atk.sltw.sample.CRUD.CreatePalavras;
 import com.myscript.atk.sltw.sample.CRUD.CreateUsuario;
 import com.myscript.atk.sltw.sample.CRUD.DeletePalavras;
+import com.myscript.atk.sltw.sample.CRUD.DeleteUsuario;
 import com.myscript.atk.sltw.sample.CRUD.ReadPalavras;
 import com.myscript.atk.sltw.sample.CRUD.ReadUsuario;
 import com.myscript.atk.sltw.sample.CRUD.UpdatePalavras;
@@ -58,6 +59,9 @@ public class Login_activity extends AppCompatActivity {
         setContentView(R.layout.activity_login_activity);
 
         palavraLista = new ArrayList<>();
+
+        DeleteUsuario delet = new DeleteUsuario(getApplicationContext());
+
 
         CreateUsuario c = new CreateUsuario(getApplicationContext());
         c.createTable();
@@ -207,8 +211,11 @@ public class Login_activity extends AppCompatActivity {
                             if(adm.equals("0")){
                                 abrirTelaPrincipalComum(autenticacao.getUid());
                             }
-                            else{
+                            else if(adm.equals("1")){
                                 abrirTelaPrincipalAdm(autenticacao.getUid());
+                            }
+                            else{
+                                Toast.makeText(Login_activity.this, "Modalidade Invalida!", Toast.LENGTH_SHORT).show();
                             }
                         }
 

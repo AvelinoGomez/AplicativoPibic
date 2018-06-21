@@ -80,8 +80,11 @@ public class CadastroActivity extends AppCompatActivity {
                                       usuarios.setJogos("0");
                                       usuarios.setAdm("0");
                                       usuarios.setBackGround("0");
+                                      usuarios.setAvatar("0");
                                       usuarios.setMensagem("Digite o Lembrete do Aluno!");
                                       usuarios.setCorLapis("-65536");
+                                      usuarios.setCorBackGround("0");
+                                      usuarios.setFlagFundo("0");
 
                                       cadastrarUsuario();
                                   }else Toast.makeText(CadastroActivity.this, "Digite um Email!", Toast.LENGTH_LONG).show();

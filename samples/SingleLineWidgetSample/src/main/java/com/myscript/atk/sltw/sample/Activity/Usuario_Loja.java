@@ -42,9 +42,10 @@ public class Usuario_Loja extends AppCompatActivity {
 
 
     int contadorFundo;
-    int contadorMsg;
+    int contadorAvatar;
 
     int qtdBackgroundsCadastrados=3; // 0 - 2//
+    int qtdMsgCadastradas=3;
 
     DatabaseReference firebase;
     FirebaseAuth usuarioFirebase;
@@ -59,6 +60,11 @@ public class Usuario_Loja extends AppCompatActivity {
         uid = dados.getString("uid").toString();
         final TextView edtNomeLoja = (TextView)findViewById(R.id.edtNomeLoja);
         final TextView edtPontuacao = (TextView)findViewById(R.id.edtPontGeral);
+
+        instanciarComponentes();
+
+        setBackgroundTela(1);
+        setMensagemTela(1);
 
         /*//Resgatando Usuario//
         firebase = ConfiguracaoFirebase.getFirebase().child("Usuarios").child(uid);
@@ -84,18 +90,20 @@ public class Usuario_Loja extends AppCompatActivity {
         //RESGATANDO USUARIO//*/
 
         ReadUsuario r = new ReadUsuario(getApplicationContext());
-        ArrayList<Usuarios> usuariosLista = r.getUsuarios();
+        final ArrayList<Usuarios> usuariosLista = r.getUsuarios();
         usuario = usuariosLista.get(0);
 
         edtNomeLoja.setText(usuario.getNome()+" "+usuario.getSobrenome());
         edtPontuacao.setText(usuario.getPontuacao());
         contadorFundo = Integer.valueOf(usuario.getBackGround());
-        contadorMsg = Integer.valueOf(usuario.getMensagem());
+
+        //contadorMsg = Integer.valueOf(usuario.getMensagem());
 
 
-        instanciarComponentes();
+
 
         //SETANDO BACKGROUND//
+        if(usuario.getFlagFundo().equals("1"))
         if(contadorFundo==0){
             layoutInteiro.setBackgroundResource(R.drawable.background1);
         }else if(contadorFundo==1){
@@ -103,12 +111,12 @@ public class Usuario_Loja extends AppCompatActivity {
         }else{
             layoutInteiro.setBackgroundResource(R.drawable.background3);
         }
+        else{
+            layoutInteiro.setBackgroundColor(Integer.valueOf(usuario.getCorBackGround()));
+        }
         //////////////////////
 
         //SETANDO MENSAGEM//
-        if(contadorMsg==0){
-            imgMsg.setBackgroundResource(R.drawable.barco);
-        }
         //////////////////////
 
         btnPassarEsqFundo.setOnClickListener(new View.OnClickListener() {
@@ -136,13 +144,39 @@ public class Usuario_Loja extends AppCompatActivity {
             }
         });
 
+        btnPassarEsqMsg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(contadorAvatar==0){
+                    contadorAvatar=qtdMsgCadastradas-1;
+                    setMensagemTela(contadorAvatar);
+                }else{
+                    contadorAvatar--;
+                    setMensagemTela(contadorAvatar);
+                }
+            }
+        });
+        btnPassarDirMsg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(contadorAvatar==qtdMsgCadastradas-1){
+                    contadorAvatar=0;
+                    setMensagemTela(contadorAvatar);
+                }else{
+                    contadorAvatar++;
+                    setMensagemTela(contadorAvatar);
+                }
+            }
+        });
+
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 firebase = ConfiguracaoFirebase.getFirebase().child("Usuarios").child(uid);
 
                 usuario.setBackGround(contadorFundo+"");
-                usuario.setMensagem(contadorMsg+"");
+                usuario.setFlagFundo("1");
+                usuario.setAvatar(contadorAvatar+"");
 
                 firebase.setValue(usuario);
 
@@ -184,10 +218,26 @@ public class Usuario_Loja extends AppCompatActivity {
 
     }
 
-    private void setMensagemTela(int contadorMsg) {
+    private void setMensagemTela(int contadorAvatar) {
 
-        if(contadorMsg==0){
-            imgMsg.setBackgroundResource(R.drawable.barco);
+        if(contadorAvatar==0){
+            imgMsg.setBackgroundResource(R.mipmap.avatar_carro);
+            //layoutInteiro.setBackgroundResource(R.drawable.background1);
+            txtPrecoMsg.setText("50");
+        }
+        else if(contadorAvatar==1){
+            imgMsg.setBackgroundResource(R.mipmap.avatar_lancha);
+            //layoutInteiro.setBackgroundResource(R.drawable.background2);
+            txtPrecoMsg.setText("50");
+        }else if(contadorAvatar==2){
+            imgMsg.setBackgroundResource(R.mipmap.ic_launcher);
+            //layoutInteiro.setBackgroundResource(R.drawable.background3);
+            txtPrecoMsg.setText("100");
+        }else /*if(contadorFundo<0)*/{
+            contadorAvatar=1;
+            imgMsg.setBackgroundResource(R.mipmap.avatar_lancha);
+            //layoutInteiro.setBackgroundResource(R.drawable.background2);
+            txtPrecoMsg.setText("50");
         }
 
     }

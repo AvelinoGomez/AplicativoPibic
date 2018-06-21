@@ -64,6 +64,9 @@ public class ReadUsuario extends SQLiteOpenHelper {
                     usuario.setMensagem(c.getString(11));
                     usuario.setSenha(c.getString(12));
                     usuario.setCorLapis(c.getString(13));
+                    usuario.setAvatar(c.getString(14));
+                    usuario.setCorBackGround(c.getString(15));
+                    usuario.setFlagFundo(c.getString(16));
 
                     usuariosArray.add(usuario);
 
@@ -106,6 +109,10 @@ public class ReadUsuario extends SQLiteOpenHelper {
                         usuario.setBackGround(c.getString(6));
                         usuario.setMensagem(c.getString(11));
                         usuario.setSenha(c.getString(12));
+                        usuario.setCorLapis(c.getString(13));
+                        usuario.setAvatar(c.getString(14));
+                        usuario.setCorBackGround(c.getString(15));
+                        usuario.setFlagFundo(c.getString(16));
 
                         return usuario;
                     }

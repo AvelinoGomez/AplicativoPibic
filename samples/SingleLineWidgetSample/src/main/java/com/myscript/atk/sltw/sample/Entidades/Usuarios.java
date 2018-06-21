@@ -29,12 +29,14 @@ public class Usuarios implements Serializable{
     private String jogos;
 
     private String backGround;
+    private String avatar;
+
     private String mensagem;
 
-
-
     private String corLapis;
+    private String corBackGround;
 
+    private String flagFundo;
 
 
     public Usuarios() {
@@ -56,10 +58,37 @@ public class Usuarios implements Serializable{
         hashMapUsuario.put("pontuacao",getPontuacao());
         hashMapUsuario.put("jogos",getJogos());
         hashMapUsuario.put("background",getBackGround());
+        hashMapUsuario.put("avatar",getAvatar());
         hashMapUsuario.put("mensagem",getMensagem());
         hashMapUsuario.put("corLapis",getCorLapis());
+        hashMapUsuario.put("corBackground",getCorBackGround());
+        hashMapUsuario.put("flagFundo",getFlagFundo());
 
         return hashMapUsuario;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public String getCorBackGround() {
+        return corBackGround;
+    }
+
+    public void setCorBackGround(String corBackGround) {
+        this.corBackGround = corBackGround;
+    }
+
+    public String getFlagFundo() {
+        return flagFundo;
+    }
+
+    public void setFlagFundo(String flagFundo) {
+        this.flagFundo = flagFundo;
     }
 
     public String getCorLapis() {

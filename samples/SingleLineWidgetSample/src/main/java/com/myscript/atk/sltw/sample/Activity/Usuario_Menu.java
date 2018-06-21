@@ -104,12 +104,15 @@ public class Usuario_Menu extends AppCompatActivity {
         });
 
         //BACKGROUND ESCOLHIDO//
+        if(usuario.getFlagFundo().equals("1")){
         if(usuario.getBackGround().equals("0")){
             view.setBackgroundResource(R.drawable.background1);
         }else if(usuario.getBackGround().equals("1")){
             view.setBackgroundResource(R.drawable.background2);
         }else{
             view.setBackgroundResource(R.drawable.background3);
+        }}else{
+            view.setBackgroundColor(Integer.valueOf(usuario.getCorBackGround()));
         }
         //
 

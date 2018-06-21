@@ -38,7 +38,7 @@ public class CreateUsuario extends SQLiteOpenHelper {
         openDB();
         String createTable = "CREATE TABLE IF NOT EXISTS " + TABELA_USUARIO+ " ("+"ID TEXT, "+"NOME TEXT,"+
                 "SOBRENOME TEXT,"+"DIANASC TEXT,"+"MESNASC TEXT,"+"ANONASC TEXT,"+"BACKGROUND TEXT,"+"ADM TEXT,"+
-                "PONTUACAO TEXT,"+"EMAIL TEXT,"+"JOGOS TEXT,"+"MENSAGEM TEXT,"+"SENHA TEXT,"+"CORLAPIS TEXT"+")";
+                "PONTUACAO TEXT,"+"EMAIL TEXT,"+"JOGOS TEXT,"+"MENSAGEM TEXT,"+"SENHA TEXT,"+"CORLAPIS TEXT,"+"AVATAR TEXT,"+"CORBACKGROUND TEXT,"+"FLAGBACKGROUND TEXT"+")";
         try{
             db.execSQL(createTable);
             return true;

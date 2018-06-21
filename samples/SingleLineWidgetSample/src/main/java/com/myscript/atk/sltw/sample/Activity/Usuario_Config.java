@@ -38,6 +38,7 @@ public class Usuario_Config extends AppCompatActivity {
         setContentView(R.layout.telaconfig);
         Button btnGoToADD = (Button)findViewById(R.id.tc_btnGoToADD);
         Button tc_paletaCores = (Button)findViewById(R.id.tc_paletaCores);
+        Button tc_background = (Button)findViewById(R.id.tc_paletaPapel);
         view = (View)findViewById(R.id.layout_telaconfig);
 
         usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
@@ -74,12 +75,16 @@ public class Usuario_Config extends AppCompatActivity {
         //RESGATANDO USUARIO//
 
         //BACKGROUND ESCOLHIDO//
+        if(usuarioLogado.getFlagFundo().equals("1"))
         if(usuarioLogado.getBackGround().equals("0")){
             view.setBackgroundResource(R.drawable.background1);
         }else if(usuarioLogado.getBackGround().equals("1")){
             view.setBackgroundResource(R.drawable.background2);
         }else{
             view.setBackgroundResource(R.drawable.background3);
+        }
+        else{
+            view.setBackgroundColor(Integer.valueOf(usuarioLogado.getCorBackGround()));
         }
         //
 
@@ -97,10 +102,22 @@ public class Usuario_Config extends AppCompatActivity {
             }
         });
 
+        tc_background.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irParaPaletaBackground();
+            }
+        });
+
     }
 
     public void irParaPaletaLapis(){
         Intent intent = new Intent(this,Usuario_CoresLapis.class);
+        startActivity(intent);
+    }
+
+    public void irParaPaletaBackground(){
+        Intent intent = new Intent(this,Usuario_CoresBackground.class);
         startActivity(intent);
     }
 
