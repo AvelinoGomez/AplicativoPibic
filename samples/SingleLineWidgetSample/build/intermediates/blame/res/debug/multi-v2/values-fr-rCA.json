@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\b0f78333b3cb2120b6e34c72a7f4d28d\\res\\values-fr-rCA\\values.xml",
+                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\910c3c1a0bc0fd74fec6b975cfe0c5e2\\res\\values-fr-rCA\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\afccbb139fef82d0a1b9855de73c6ec2\\res\\values-fr-rCA\\values-fr-rCA.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,166,274,397,512,623,710,826,956,1039,1119,1215,1325,1437,1540,1651,1758,1860,1982,2081",
-                        "endColumns": "110,107,122,114,110,86,115,129,82,79,95,109,111,102,110,106,101,121,98,100",
-                        "endOffsets": "161,269,392,507,618,705,821,951,1034,1114,1210,1320,1432,1535,1646,1753,1855,1977,2076,2177"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,38",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,324,447,562,673,760,876,1006,1089,1169,1265,1375,1487,1590,1701,1808,1910,2032,4881",
-                        "endColumns": "110,107,122,114,110,86,115,129,82,79,95,109,111,102,110,106,101,121,98,100",
-                        "endOffsets": "211,319,442,557,668,755,871,1001,1084,1164,1260,1370,1482,1585,1696,1803,1905,2027,2126,4977"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.2.aar\\6c34f20c366019c90c328b2d1dd71139\\res\\values-fr-rCA\\values.xml",
+                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.2.aar\\d118f9ca7f99eb33d3356b2a9b2d3d23\\res\\values-fr-rCA\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,6 +35,23 @@
                         "startOffsets": "3201",
                         "endColumns": "219",
                         "endOffsets": "3416"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\201e4b278831333ac1061bd04c4e7fb0\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,166,274,397,512,623,710,826,956,1039,1119,1215,1325,1437,1540,1651,1758,1860,1982,2081",
+                        "endColumns": "110,107,122,114,110,86,115,129,82,79,95,109,111,102,110,106,101,121,98,100",
+                        "endOffsets": "161,269,392,507,618,705,821,951,1034,1114,1210,1320,1432,1535,1646,1753,1855,1977,2076,2177"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,216,324,447,562,673,760,876,1006,1089,1169,1265,1375,1487,1590,1701,1808,1910,2032,4881",
+                        "endColumns": "110,107,122,114,110,86,115,129,82,79,95,109,111,102,110,106,101,121,98,100",
+                        "endOffsets": "211,319,442,557,668,755,871,1001,1084,1164,1260,1370,1482,1585,1696,1803,1905,2027,2126,4977"
                     }
                 }
             ]

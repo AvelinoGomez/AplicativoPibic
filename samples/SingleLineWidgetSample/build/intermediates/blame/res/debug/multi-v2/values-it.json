@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-it\\values-it.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\afccbb139fef82d0a1b9855de73c6ec2\\res\\values-it\\values-it.xml",
+                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\201e4b278831333ac1061bd04c4e7fb0\\res\\values-it\\values-it.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.2.aar\\6c34f20c366019c90c328b2d1dd71139\\res\\values-it\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "194",
-                        "endOffsets": "479"
-                    },
-                    "to": {
-                        "startLines": "28",
-                        "startColumns": "4",
-                        "startOffsets": "3063",
-                        "endColumns": "194",
-                        "endOffsets": "3253"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\b0f78333b3cb2120b6e34c72a7f4d28d\\res\\values-it\\values.xml",
+                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\910c3c1a0bc0fd74fec6b975cfe0c5e2\\res\\values-it\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,6 +35,23 @@
                         "startOffsets": "2056,2163,2346,2473,2583,2800,2930,3258,3474,3583,3768,3897,4112,4323,4420,4511",
                         "endColumns": "106,182,126,109,216,129,132,215,108,184,128,214,210,96,90,105",
                         "endOffsets": "2158,2341,2468,2578,2795,2925,3058,3469,3578,3763,3892,4107,4318,4415,4506,4612"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Avelino\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.2.aar\\d118f9ca7f99eb33d3356b2a9b2d3d23\\res\\values-it\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "194",
+                        "endOffsets": "479"
+                    },
+                    "to": {
+                        "startLines": "28",
+                        "startColumns": "4",
+                        "startOffsets": "3063",
+                        "endColumns": "194",
+                        "endOffsets": "3253"
                     }
                 }
             ]

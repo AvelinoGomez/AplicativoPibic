@@ -1,7 +1,13 @@
-#Thu Jun 21 16:35:01 BRT 2018
-base.0=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+#Mon Dec 10 20:31:13 BRST 2018
+renamed.3=classes4.dex
+renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\18\\classes2.dex
-base.1=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\18
-file.0=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\18\\classes.dex
+base.3=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+base.2=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+base.1=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+base.0=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+file.3=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\3\\classes.dex
+file.2=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
+file.1=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\1\\classes.dex
+file.0=C\:\\Users\\Avelino\\Desktop\\AplicativoPibic\\samples\\SingleLineWidgetSample\\build\\intermediates\\transforms\\dexMerger\\debug\\2\\classes.dex

@@ -2,6 +2,8 @@
 
 package com.myscript.atk.sltw.sample.Activity;
 
+import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -11,6 +13,7 @@ import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,6 +51,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
+import android.os.Vibrator;
 
 
 public class Usuario_Jogando extends Activity implements
@@ -55,7 +59,6 @@ public class Usuario_Jogando extends Activity implements
         SingleLineWidgetApi.OnTextChangedListener {
 
   private DatabaseReference firebase = FirebaseDatabase.getInstance().getReference();
-  private FirebaseDatabase firebaseDatabase;
 
   private FirebaseStorage storage = FirebaseStorage.getInstance();
   private StorageReference storageReference = storage.getReferenceFromUrl("gs://aplicativo-pibic.appspot.com");
@@ -87,20 +90,20 @@ public class Usuario_Jogando extends Activity implements
 
     Intent intent = getIntent();
     Bundle dados = intent.getExtras();
-    uid = dados.getString("uid").toString();
+    uid = dados.getString("uid");
 
     refErro = new ReferenciasErro();
 
     ReadPalavras readPalavras = new ReadPalavras(getApplicationContext());
     listaPalavraClasse = readPalavras.getPalavras();
     listaPalavras = new ArrayList<>();
-    layoutTeclado = (View)findViewById(R.id.layoutTeclado);
+    layoutTeclado = findViewById(R.id.layoutTeclado);
 
-    balao = (View)findViewById(R.id.layout);
+    balao = findViewById(R.id.layout);
 
 
 
-      SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+      @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
       Date data = new Date();
 
       dataJogo = sdf.format(data);
@@ -108,45 +111,25 @@ public class Usuario_Jogando extends Activity implements
 
     //TRANSFORMAR ARRAY PALAVRAS > ARRAY STRING//
     for(int i=0;i<listaPalavraClasse.size();i++){
-      listaPalavras.add(listaPalavraClasse.get(i).getPalavra().toString());
+      listaPalavras.add(listaPalavraClasse.get(i).getPalavra());
     }
 
     context = getApplicationContext();
 
       ImageView imgAvatar = (ImageView)findViewById(R.id.viewAvatar);
-    Button botao = (Button)findViewById(R.id.confirmar);
-    View Balao = (View) findViewById(R.id.layout);
-    mWidget = (SingleLineWidgetApi) findViewById(R.id.singleLine_widget);
-    TextView edtPontuacao = (TextView) findViewById(R.id.txtPontuacao);
+      Button botao = (Button)findViewById(R.id.confirmar);
+      mWidget = (SingleLineWidgetApi) findViewById(R.id.singleLine_widget);
+      TextView edtPontuacao = (TextView) findViewById(R.id.txtPontuacao);
+      ImageView img = (ImageView)findViewById(R.id.imgTerceiraVida);
+      Drawable drawable = getResources().getDrawable(R.mipmap.coracaocheio);
+      img.setImageDrawable(drawable);
+      ImageView img2 = (ImageView)findViewById(R.id.imgSegundaVida);
+      img2.setImageDrawable(drawable);
+      ImageView img3 = (ImageView)findViewById(R.id.imgPrimeiraVida);
+      img3.setImageDrawable(drawable);
 
-    xInicial = Balao.getX();
-    yInicial = Balao.getY();
-
-    ImageView img = (ImageView)findViewById(R.id.imgTerceiraVida);
-    Drawable drawable = getResources().getDrawable(R.mipmap.coracaocheio);
-    img.setImageDrawable(drawable);
-    ImageView img2 = (ImageView)findViewById(R.id.imgSegundaVida);
-    img2.setImageDrawable(drawable);
-    ImageView img3 = (ImageView)findViewById(R.id.imgPrimeiraVida);
-    img3.setImageDrawable(drawable);
-
-    /*//RESGATANDO USUARIO//
-    firebase = ConfiguracaoFirebase.getFirebase().child("Usuarios").child(uid);
-    firebase.addListenerForSingleValueEvent(new ValueEventListener() {
-      @Override
-      public void onDataChange(DataSnapshot dataSnapshot) {
-        usuario= dataSnapshot.getValue(Usuarios.class);
-        System.out.println(usuario);
-          jogos = Integer.valueOf(usuario.getJogos());
-          jogos++;
-          usuario.setJogos(jogos+"");
-      }
-
-      @Override
-      public void onCancelled(DatabaseError databaseError) {
-        System.out.println("Erro na leitura do arquivo: " + databaseError.getCode());
-      }
-    });*/
+    xInicial = balao.getX();
+    yInicial = balao.getY();
 
 
 
@@ -161,44 +144,35 @@ public class Usuario_Jogando extends Activity implements
     u.updateUsuario(usuario);
 
     //RESGATANDO USUARIO//
-
-
     historico = new Historico();
     historico.setUid(usuario.getId());
     historico.setData(dataJogo);
     vidas = 3;
-
     edtPontuacao.setText("0");
 
-    //RESGATAR PALAVRAS//
-
-
-    //Gerar palavra de acordo com o nivel//
+    //Gerar palavra//
     gerarPalavra();
 
     //SETAR O Y QUE O BALÃO COMEÇARÁ A CAIR (FORA DA TELA)//
-    Balao.setX(-135);
+    balao.setX(-135);
 
     //Animação do balão descer//
     if(vidas!=0) {
       balaoandando();
     }
 
-
-
-
     //Verifica a palavra quando o botão for clicado//
     botao.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        verificarpalavra(v,uid);
+        verificarpalavra(v);
       }
     });
 
     //Verifica se o Manuscrito está usando um registro valido//
     if (!mWidget.registerCertificate( MyCertificate.getBytes())) {
       AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
-      dlgAlert.setMessage("Please use a valid certificate.");
+      dlgAlert.setMessage("Por favor utilize um certificado válido.");
       dlgAlert.setTitle("Invalid certificate");
       dlgAlert.setCancelable(false);
       dlgAlert.setPositiveButton("OK", new DialogInterface.OnClickListener()
@@ -217,8 +191,6 @@ public class Usuario_Jogando extends Activity implements
     mWidget.setOnConfiguredListener(this);
     mWidget.setOnTextChangedListener(this);
 
-    //////////////////////////////////////////////////////////mWidget.setWritingAreaBackgroundResource(R.mipmap.moeda);
-
     // references assets directly from the APK to avoid extraction in application
     // file system
     mWidget.addSearchDir("zip://" + getPackageCodePath() + "!/assets/conf");
@@ -229,49 +201,39 @@ public class Usuario_Jogando extends Activity implements
 
     //BACKGROUND ESCOLHIDO//
       if(usuario.getFlagFundo().equals("1")){
-    if(usuario.getBackGround().equals("0")){
-      mWidget.setWritingAreaBackgroundResource(R.drawable.background1);
-    }else if(usuario.getBackGround().equals("1")){
-      mWidget.setWritingAreaBackgroundResource(R.drawable.background2);
-    }else{
-      mWidget.setWritingAreaBackgroundResource(R.drawable.background3);
-    }}else{
+          switch (usuario.getBackGround()) {
+              case "0":
+                  mWidget.setWritingAreaBackgroundResource(R.drawable.background1);
+                  break;
+              case "1":
+                  mWidget.setWritingAreaBackgroundResource(R.drawable.background2);
+                  break;
+              default:
+                  mWidget.setWritingAreaBackgroundResource(R.drawable.background3);
+                  break;
+          }
+      }else{
           mWidget.setWritingAreaBackgroundColor(Integer.valueOf(usuario.getCorBackGround()));
       }
 
-    //AVATAR ESCOLHIDO//
-      if(usuario.getAvatar().equals("0")){
-        imgAvatar.setBackgroundResource(R.mipmap.avatar_carro);
-      }else if(usuario.getAvatar().equals("1")){
-          imgAvatar.setBackgroundResource(R.mipmap.avatar_lancha);
-      }else{
-          imgAvatar.setBackgroundResource(R.mipmap.ic_launcher);
-      }
+    /*//AVATAR ESCOLHIDO//
+      switch (usuario.getAvatar()) {
+          case "0":
+              imgAvatar.setBackgroundResource(R.mipmap.avatar_carro);
+              break;
+          case "1":
+              imgAvatar.setBackgroundResource(R.mipmap.avatar_lancha);
+              break;
+          default:
+              imgAvatar.setBackgroundResource(R.mipmap.ic_launcher);
+              break;
+      }*/
 
     //COR TRAÇADO//
-
     mWidget.setInkColor(Integer.valueOf(usuario.getCorLapis()));
-
 
     //LINGUAGEM DO MYSCRIPT: pt_BR
     mWidget.configure("pt_BR", "cur_text");
-  }
-
-  @Override
-  public void onBackPressed(){
-    IrParaTelaInicial(uid);
-  }
-
-  @Override
-  protected void onDestroy() {
-    mWidget.setOnTextChangedListener(null);
-    mWidget.setOnConfiguredListener(null);
-
-    super.onDestroy();
-  }
-
-  public void onClearButtonClick(View v) {
-    mWidget.clear();
   }
 
   @Override
@@ -293,15 +255,13 @@ public class Usuario_Jogando extends Activity implements
 
   }
 
-    public void balaoandando(){
+  public void balaoandando(){
 
+      setRandomY(balao,200);
+      anim = new TranslateAnimation( balao.getX(),1500,balao.getY(),balao.getY());
+      anim.setDuration(11000);
+      anim.setFillAfter(false);
 
-        TextView txtPontuacao = (TextView)findViewById(R.id.txtPontuacao);
-
-        setRandomY(balao,200);
-        anim = new TranslateAnimation(balao.getX(),1500,balao.getY(),balao.getY());
-        anim.setFillAfter(false);
-        anim.setDuration(11000);
 
       balao.startAnimation(anim);
 
@@ -313,7 +273,7 @@ public class Usuario_Jogando extends Activity implements
 
         @Override
         public void onAnimationEnd(Animation animation) {
-                balaoestourou(balao);
+                balaoestourou();
                 vidas = perdeuVida(vidas);
                 if (vidas != 0) {
                     gerarPalavra();
@@ -327,20 +287,19 @@ public class Usuario_Jogando extends Activity implements
         }
       });
 
-    }
+  }
 
-    public void balaoestourou(View view){
-        view.clearAnimation();
-        view.setY(-135);
-    }
+  public void balaoestourou(){
+        balao.clearAnimation();
+        balao.setY(-135);
+  }
 
-  public void verificarpalavra(View view,String uid){
+  public void verificarpalavra(View view){
 
-    View txt = (View)findViewById(R.id.layout);
+    View txt = findViewById(R.id.layout);
     TextView texto = (TextView)txt.findViewById(R.id.texto);
     TextView txtPontuacao = (TextView)findViewById(R.id.txtPontuacao);
     Integer pontuacao;
-    Integer pts;
     String palavra;
     String a;
     palavra = mWidget.getText().toLowerCase();
@@ -379,7 +338,6 @@ public class Usuario_Jogando extends Activity implements
         }else{
             historico.setPalavraErro3(a);
         }
-
       vidas = perdeuVida(vidas);
       if(vidas!=0) {
         gerarPalavra();
@@ -393,8 +351,7 @@ public class Usuario_Jogando extends Activity implements
 
 
   public int perdeuVida(int vidas) {
-    View txt = (View) findViewById(R.id.layout);
-    TextView texto = (TextView) txt.findViewById(R.id.texto);
+    View txt = findViewById(R.id.layout);
 
     vidas--;
 
@@ -405,6 +362,7 @@ public class Usuario_Jogando extends Activity implements
 
        printarLayout(layoutTeclado,"Erro1");
 
+       Vibrar();
       Toast.makeText(getApplicationContext(), "Você perdeu uma vida, tente novamente", Toast.LENGTH_SHORT).show();
     } else if (vidas == 1) {
       ImageView img = (ImageView) findViewById(R.id.imgSegundaVida);
@@ -413,13 +371,14 @@ public class Usuario_Jogando extends Activity implements
 
         printarLayout(layoutTeclado,"Erro2");
 
-
+        Vibrar();
       Toast.makeText(getApplicationContext(), "Você perdeu uma vida, tente novamente", Toast.LENGTH_SHORT).show();
     } else if (vidas == 0) {
       ImageView img = (ImageView) findViewById(R.id.imgPrimeiraVida);
       Drawable drawable = getResources().getDrawable(R.mipmap.coracaovazio);
       img.setImageDrawable(drawable);
 
+        Vibrar();
         printarLayout(layoutTeclado, "Erro3");
 
       balao.setX(99999);
@@ -439,13 +398,6 @@ public class Usuario_Jogando extends Activity implements
 
   void printarLayout(View view,String nomeArquivo){
 
-      SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-      Date data = new Date();
-
-      String dataFormatada = sdf.format(data);
-
-
-
       view.setDrawingCacheEnabled(true);
       view.buildDrawingCache();
       Bitmap b1 = view.getDrawingCache();
@@ -459,48 +411,28 @@ public class Usuario_Jogando extends Activity implements
       view.destroyDrawingCache();
       view.setDrawingCacheEnabled(false);
 
-      if(nomeArquivo.equals("Erro1")){
-          historico.setLocalErro1("gs://aplicativo-pibic.appspot.com/"+historico.getUid()+"/"+dataJogo+"/"+"Erro1");
-          refErro.setErro1(b);
-      }else if(nomeArquivo.equals("Erro2")){
-          historico.setLocalErro2("gs://aplicativo-pibic.appspot.com/"+historico.getUid()+"/"+dataJogo+"/"+"Erro2");
-          refErro.setErro2(b);
-      }else{
-          historico.setLocalErro3("gs://aplicativo-pibic.appspot.com/"+historico.getUid()+"/"+dataJogo+"/"+"Erro3");
-          refErro.setErro3(b);
+      switch (nomeArquivo) {
+          case "Erro1":
+              historico.setLocalErro1("gs://aplicativo-pibic.appspot.com/" + historico.getUid() + "/" + dataJogo + "/" + "Erro1");
+              refErro.setErro1(b);
+              break;
+          case "Erro2":
+              historico.setLocalErro2("gs://aplicativo-pibic.appspot.com/" + historico.getUid() + "/" + dataJogo + "/" + "Erro2");
+              refErro.setErro2(b);
+              break;
+          default:
+              historico.setLocalErro3("gs://aplicativo-pibic.appspot.com/" + historico.getUid() + "/" + dataJogo + "/" + "Erro3");
+              refErro.setErro3(b);
+              break;
       }
-
-      /*
-      //SALVAR ARQUIVO//
-    FileOutputStream out = null;
-    try {
-
-        //Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
-      out = new FileOutputStream(getExternalFilesDir(DIRECTORY_PICTURES)+dataFormatada+nomeArquivo);
-
-
-      b.compress(Bitmap.CompressFormat.PNG, 100, out); // bmp is your Bitmap instance
-      // PNG is a lossless format, the compression factor (100) is ignored
-    } catch (Exception e) {
-      e.printStackTrace();
-    } finally {
-      try {
-        if (out != null) {
-          out.close();
-        }
-      } catch (IOException e) {
-        e.printStackTrace();
-      }
-    }*/
 
   }
 
     public void gerarPalavra(){
         View balao = (View)findViewById(R.id.layout);
       TextView text = (TextView)balao.findViewById(R.id.texto);
-      int i=0;
 
-          int tamanho = listaPalavras.size();
+        int tamanho = listaPalavras.size();
           if(tamanho== 0) {
             Toast.makeText(context,"Nenhuma palavra cadastrada no banco!",Toast.LENGTH_SHORT);
             finish();
@@ -508,7 +440,7 @@ public class Usuario_Jogando extends Activity implements
           else {
             Random random = new Random();
 
-            int j = random.nextInt((tamanho - 0) + 1);
+            int j = random.nextInt((tamanho) + 1);
 
             if (j < 0) {
               j = j * -1;
@@ -622,7 +554,7 @@ public class Usuario_Jogando extends Activity implements
           @Override
           public void onDataChange(DataSnapshot dataSnapshot) {
               Usuarios usuario = dataSnapshot.getValue(Usuarios.class);
-              int somaAux1 = Integer.valueOf(usuario.getPontuacao().toString());
+              int somaAux1 = Integer.valueOf(usuario.getPontuacao());
               int somaAux2 = Integer.valueOf(txtPontuacao.getText().toString());
               somaAux1 = somaAux1+somaAux2;
               usuario.setPontuacao(String.valueOf(somaAux1));
@@ -643,25 +575,24 @@ public class Usuario_Jogando extends Activity implements
       });
   }
 
-  /*public ArrayList<Palavra> resgatarPalavrasBD(){
+  public void Vibrar(){
+      Vibrator rr = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+      long tempo = 110;
+      rr.vibrate(tempo);
+  }
 
-    firebase = FirebaseDatabase.getInstance().getReference();
-    firebase.child("Palavras").addListenerForSingleValueEvent(new ValueEventListener() {
-      @Override
-      public void onDataChange(DataSnapshot dataSnapshot) {
-        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-          listaPalavras.add(postSnapshot.getValue(Palavra.class));
-        }
-      }
+    @Override
+    public void onBackPressed(){
+        IrParaTelaInicial(uid);
+    }
 
-      @Override
-      public void onCancelled(DatabaseError databaseError) {
+    @Override
+    protected void onDestroy() {
+        mWidget.setOnTextChangedListener(null);
+        mWidget.setOnConfiguredListener(null);
 
-      }
-    });
-
-    return listaPalavras;
-    }*/
+        super.onDestroy();
+    }
 
 
 

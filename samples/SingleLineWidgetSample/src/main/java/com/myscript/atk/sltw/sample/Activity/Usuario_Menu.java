@@ -10,10 +10,17 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.myscript.atk.sltw.sample.CRUD.CreatePalavras;
+import com.myscript.atk.sltw.sample.CRUD.DeletePalavras;
 import com.myscript.atk.sltw.sample.CRUD.DeleteUsuario;
 import com.myscript.atk.sltw.sample.CRUD.ReadPalavras;
 import com.myscript.atk.sltw.sample.CRUD.ReadUsuario;
+import com.myscript.atk.sltw.sample.CRUD.UpdatePalavras;
 import com.myscript.atk.sltw.sample.DAO.ConfiguracaoFirebase;
 import com.myscript.atk.sltw.sample.Entidades.Palavra;
 import com.myscript.atk.sltw.sample.Entidades.Usuarios;
@@ -84,6 +91,7 @@ public class Usuario_Menu extends AppCompatActivity {
                 ArrayList<Palavra> palavras = rp.getPalavras();
                 if(palavras.size()==0){
                     Toast.makeText(context, "Não existem palavras cadastradas!", Toast.LENGTH_SHORT).show();
+                    carregarPalavra();
                 }else
                 IrParaTelaJogar(uid);
             }
@@ -118,7 +126,36 @@ public class Usuario_Menu extends AppCompatActivity {
 
     }
 
+    void carregarPalavra(){
 
+        final UpdatePalavras up = new UpdatePalavras(getApplicationContext());
+
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        //firebase = FirebaseDatabase.getInstance().getReference().child("Palavras");
+        DatabaseReference ref = database.getReference();
+
+        ref.child("Palavras").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                //SE UM FILHO FOR ALTERADO NAS PALAVRAS,ALL SQL É ATUALIZADO//
+                DeletePalavras del = new DeletePalavras(getApplicationContext());
+                del.deleteTable();
+
+                CreatePalavras createPalavras = new CreatePalavras(getApplicationContext());
+                createPalavras.createTable();
+
+                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
+                    up.insertPalavra(postSnapshot.getValue(Palavra.class));
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
 
     void IrParaTelaJogar(String uid){
         Bundle bundle = new Bundle();
